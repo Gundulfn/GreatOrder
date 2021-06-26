@@ -11,9 +11,11 @@ public class MovementController : MonoBehaviour
     {
         currentSpeed = moveSpeed * direction * Time.deltaTime;
 
+        transform.position = new Vector2(transform.position.x, 0);
+        
         if(Mathf.Abs(transform.position.x + moveSpeed * direction * Time.deltaTime) >= 1)
         {
-            transform.position = new Vector2(direction, transform.position.y);
+            transform.position = new Vector2(direction, 0);
             direction *= -1;
         }
         else

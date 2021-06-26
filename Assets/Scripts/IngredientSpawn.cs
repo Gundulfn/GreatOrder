@@ -10,7 +10,6 @@ public class IngredientSpawn : MonoBehaviour
 
     private MovementController spawnedIngredient;
     
-    private float prevY = 0;
     private int spawnCount = 0;
 
     public void SpawnIngredient()
@@ -24,8 +23,9 @@ public class IngredientSpawn : MonoBehaviour
 
         orderMovement.Move(ingredients[randomInt].transform.lossyScale.y / 2);
         
-        GameObject obj = Instantiate(ingredients[randomInt], new Vector2(-1, 0), Quaternion.identity);
+        GameObject obj = Instantiate(ingredients[randomInt]);
         obj.transform.parent = orderMovement.transform;
+        obj.transform.position = new Vector2(-1, 0);
         
         spawnedIngredient = obj.GetComponent<MovementController>();
         
