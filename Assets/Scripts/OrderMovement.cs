@@ -7,7 +7,7 @@ public class OrderMovement : MonoBehaviour
 
     private bool isMoving;
     private bool isFirstMove = true;
-    
+
     void Start()
     {
         ingredientThickness = transform.lossyScale.y / 2;
@@ -21,8 +21,10 @@ public class OrderMovement : MonoBehaviour
             isMoving = false;
         }
 
-        if(isFirstMove)
+        if (isFirstMove)
         {
+            GameModeHandler.StartGame();
+
             transform.Translate(new Vector2(0, -ingredientThickness));
             isFirstMove = false;
         }
@@ -30,7 +32,7 @@ public class OrderMovement : MonoBehaviour
         {
             targetY = transform.position.y - (this.ingredientThickness + ingredientThickness);
         }
-        
+
         this.ingredientThickness = ingredientThickness;
     }
 
@@ -53,8 +55,16 @@ public class OrderMovement : MonoBehaviour
         }
     }
 
-    public void AddOrderPart(GameObject obj)
+    public void StopMovement()
     {
+        if (transform.position.y < -6)
+        {
+            CameraMovement.SetTargetPos(new Vector3(0, transform.position.y / 2, transform.position.y));
+        }
+    }
 
+    public void Reset()
+    {
+        transform.position = Vector2.zero;
     }
 }

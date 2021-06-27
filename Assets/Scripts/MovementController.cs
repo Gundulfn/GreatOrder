@@ -9,7 +9,7 @@ public class MovementController : MonoBehaviour
 
     void Update()
     {
-        currentSpeed = moveSpeed * direction * Time.deltaTime;
+        currentSpeed = (moveSpeed + PointCalculator.GetSpeedExtra()) * direction * Time.deltaTime;
 
         transform.position = new Vector2(transform.position.x, 0);
         
