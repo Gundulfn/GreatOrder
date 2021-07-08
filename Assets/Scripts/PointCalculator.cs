@@ -21,19 +21,16 @@ public class PointCalculator
         {
             posPoint += NOICE_POINT;
             noicePointCount++;
-            Debug.Log("NOICE x" + noicePointCount);
         }
         else if(ingredientPos >= BAD_LIMIT)
         {
             posPoint += BAD_POINT;
             noicePointCount = 0;
-            Debug.Log("BAD");
         }
         else
         {
             posPoint += GOOD_POINT;
             noicePointCount = 0;
-            Debug.Log("OKAY");
         }
     }
 
@@ -46,6 +43,7 @@ public class PointCalculator
         noicePointCount = 0;
         posPoint = 0;
 
+        Money.IncreaseMoneyAmount(totalPoint);
         return totalPoint;
     }
 

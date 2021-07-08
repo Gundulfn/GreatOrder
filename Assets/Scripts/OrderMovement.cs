@@ -17,7 +17,7 @@ public class OrderMovement : MonoBehaviour
     {
         if (isMoving)
         {
-            transform.position = new Vector2(0, targetY);
+            transform.position = new Vector3(0, targetY, transform.position.z);
             isMoving = false;
         }
 
@@ -42,11 +42,11 @@ public class OrderMovement : MonoBehaviour
 
         if (isMoving)
         {
-            Vector2 movement = Vector2.MoveTowards(transform.position, new Vector2(0, targetY), 5 * Time.deltaTime);
+            Vector3 movement = Vector3.MoveTowards(transform.position, new Vector3(0, targetY, transform.position.z), 5 * Time.deltaTime);
 
             if (movement.y <= targetY)
             {
-                transform.position = new Vector2(0, targetY);
+                transform.position = new Vector3(0, targetY, transform.position.z);
             }
             else
             {

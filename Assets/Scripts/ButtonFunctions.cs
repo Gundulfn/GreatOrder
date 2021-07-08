@@ -5,6 +5,7 @@ public class ButtonFunctions : MonoBehaviour
 {
     public void StartGame()
     {
+        Money.IncreaseMoneyAmount(200);
         SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
     }
 
@@ -37,6 +38,7 @@ public class ButtonFunctions : MonoBehaviour
 
     public void RestartGame()
     {
+        GameModeHandler.Reset();
         SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
     }
 

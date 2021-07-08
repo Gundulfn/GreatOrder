@@ -9,18 +9,21 @@ public class MovementController : MonoBehaviour
 
     void Update()
     {
-        currentSpeed = (moveSpeed + PointCalculator.GetSpeedExtra()) * direction * Time.deltaTime;
-
-        transform.position = new Vector2(transform.position.x, 0);
-        
-        if(Mathf.Abs(transform.position.x + moveSpeed * direction * Time.deltaTime) >= 1)
+        if (currentSpeed == 0)
         {
-            transform.position = new Vector2(direction, 0);
+            currentSpeed = moveSpeed + PointCalculator.GetSpeedExtra();
+        }
+
+        transform.position = new Vector3(transform.position.x, 0, 0);
+
+        if (Mathf.Abs(transform.position.x + currentSpeed * direction * Time.deltaTime) >= 1)
+        {
+            transform.position = new Vector3(direction, 0, 0);
             direction *= -1;
         }
         else
         {
-            transform.position += transform.right * moveSpeed * direction * Time.deltaTime;
+            transform.position += transform.right * currentSpeed * direction * Time.deltaTime;
         }
     }
 }

@@ -16,11 +16,6 @@ public class GameModeHandler : MonoBehaviour
 
     private static bool hasGameStarted;
     
-    void Start()
-    {
-        GameVariables.Initialize();
-    }
-    
     void Update()
     {
         if(!gameControllerObj.activeSelf)
@@ -39,15 +34,17 @@ public class GameModeHandler : MonoBehaviour
             if (currentTime > 1)
             {
                 currentTime -= Time.deltaTime;
-                topText.SetText((int)currentTime + " time left");
+                topText.SetText((int)currentTime + " seconds left");
             }
             else
             {
                 topText.SetText("Time's up");
+                PointCalculator.GetTotalPoint();
 
-                Debug.Log(PointCalculator.GetTotalPoint());
                 gameControllerObj.GetComponent<IngredientSpawn>().DestroyMovingIngredient();
                 gameControllerObj.SetActive(false);
+                
+                Reset();
             }
         }
         else
@@ -59,5 +56,10 @@ public class GameModeHandler : MonoBehaviour
     public static void StartGame()
     {
         hasGameStarted = true;
+    }
+
+    public static void Reset()
+    {
+        hasGameStarted = false;
     }
 }
