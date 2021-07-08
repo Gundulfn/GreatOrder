@@ -3,16 +3,16 @@ using TMPro;
 
 public class MoneyStateBar : MonoBehaviour
 {
-    [SerializeField]
-    private TextMeshProUGUI moneyStateText;
+    private static TextMeshProUGUI moneyStateText;
     
     void Start()
     {
+        moneyStateText = GetComponentInChildren<TextMeshProUGUI>();
         UpdateMoneyState();
     }
 
     // Update is called once per frame
-    public void UpdateMoneyState()
+    public static void UpdateMoneyState()
     {
         moneyStateText.SetText(GameVariables.GetMoney().ToString());
     }

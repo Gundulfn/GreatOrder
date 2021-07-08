@@ -7,7 +7,9 @@ public class Money
     public static void IncreaseMoneyAmount(int increasement)
     {
         int newMoney = GameVariables.GetMoney() + increasement;
+
         GameVariables.SetMoney(newMoney);
+        MoneyStateBar.UpdateMoneyState();
     }
 
     public static void DecreaseMoneyAmount(int decreasement)
@@ -24,6 +26,7 @@ public class Money
         }
 
         GameVariables.SetMoney(newMoney);
+        MoneyStateBar.UpdateMoneyState();
     }
 
     public static bool IsMoneyEnough(int price)

@@ -19,11 +19,6 @@ public class ButtonFunctions : MonoBehaviour
         uiObj.SetActive(false);
     }
 
-    public void Buy()
-    {
-        Debug.Log("Buy");
-    }
-
     public void PauseGame(GameObject uiObj)
     {
         OpenUI(uiObj);
