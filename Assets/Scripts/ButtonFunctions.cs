@@ -33,8 +33,9 @@ public class ButtonFunctions : MonoBehaviour
 
     public void RestartGame()
     {
-        GameModeHandler.Reset();
+        //GameModeHandler.Reset();
         SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
+        Time.timeScale = 1;
     }
 
     public void ExitGame()
