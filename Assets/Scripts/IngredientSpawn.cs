@@ -6,9 +6,6 @@ public class IngredientSpawn : MonoBehaviour
     private GameObject breadObject;
 
     [SerializeField]
-    private GameObject[] ingredients;
-
-    [SerializeField]
     private OrderMovement orderMovement;
 
     private Transform placedIngredient;
@@ -16,7 +13,7 @@ public class IngredientSpawn : MonoBehaviour
 
     public void SpawnIngredient(int round = 1)
     {
-        int randomInt = Random.Range(0, ingredients.Length);
+        GameObject ingredientPrefab = IngredientPrefabData.GetRandomIngredient();
 
         if (spawnedIngredient)
         {
@@ -27,11 +24,11 @@ public class IngredientSpawn : MonoBehaviour
             Destroy(spawnedIngredient);
         }
 
-        orderMovement.Move(ingredients[randomInt].transform.lossyScale.y / 2);
+        orderMovement.Move(ingredientPrefab.transform.lossyScale.y / 2);
 
-        GameObject obj = Instantiate(ingredients[randomInt]);
+        GameObject obj = Instantiate(ingredientPrefab);
         obj.transform.parent = orderMovement.transform;
-        obj.transform.position = new Vector3(-1, 0, 0);
+        obj.transform.position = new Vector3(-1, 0, orderMovement.transform.position.z);
 
         spawnedIngredient = obj.GetComponent<MovementController>();
     }

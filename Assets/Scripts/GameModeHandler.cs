@@ -56,6 +56,7 @@ public class GameModeHandler : MonoBehaviour
     public static void StartGame()
     {
         hasGameStarted = true;
+        Time.timeScale = 1;
     }
 
     public static void Reset()

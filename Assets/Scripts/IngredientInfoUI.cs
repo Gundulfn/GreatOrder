@@ -32,8 +32,6 @@ public class IngredientInfoUI : MonoBehaviour
             Money.DecreaseMoneyAmount(data.price);
             GameVariables.AddBoughtIngredient(data.ingredientName);
             Destroy(this.gameObject);
-
-            //Add ingredient prefab to GameScene
         }
         else
         {
