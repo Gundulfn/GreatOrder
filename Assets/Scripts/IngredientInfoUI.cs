@@ -35,7 +35,7 @@ public class IngredientInfoUI : MonoBehaviour
         }
         else
         {
-            // Can't buy notification
+            ShopUIHandler.instance.PlayNotification();
         }
     }
 }

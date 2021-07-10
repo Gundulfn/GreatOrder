@@ -1,13 +1,12 @@
 using UnityEngine;
 using System.Linq;
+using System.Collections.Generic;
 
 public class GameVariables : MonoBehaviour
 {
     private static int money;
     private const int DEFAULT_MONEY_AMOUNT = 500;
-
-    private static int ingredientVarietyCount;
-    private static string[] boughtIngredients = new string[50];
+    private static List<string> boughtIngredients = new List<string>();
 
     void Awake()
     {
@@ -20,11 +19,11 @@ public class GameVariables : MonoBehaviour
 
         if (PlayerPrefs.GetString("boughtIngredients", "") != "")
         {
-            boughtIngredients = PlayerPrefs.GetString("boughtIngredients", "").Split(';');
-            ingredientVarietyCount = boughtIngredients.Length;
+            string[] values = PlayerPrefs.GetString("boughtIngredients", "").Split(';');
 
-            for (int i = 0; i < ingredientVarietyCount; i++)
+            for (int i = 0; i < values.Length; i++)
             {
+                boughtIngredients.Add(values[i]);
                 IngredientPrefabData.AddIngredientPrefab(boughtIngredients[i]);
             }
         }
@@ -43,13 +42,12 @@ public class GameVariables : MonoBehaviour
 
     public static int GetIngredientVar()
     {
-        return ingredientVarietyCount;
+        return boughtIngredients.Count;
     }
 
     public static void AddBoughtIngredient(string ingredientName)
     {
-        boughtIngredients[ingredientVarietyCount] = ingredientName;
-        ingredientVarietyCount++;
+        boughtIngredients.Add(ingredientName);
 
         IngredientPrefabData.AddIngredientPrefab(ingredientName);
         SaveBoughtIngredients();
@@ -57,7 +55,7 @@ public class GameVariables : MonoBehaviour
 
     public static bool IsIngredientBought(string ingredientName)
     {
-        if (ingredientVarietyCount == 0)
+        if (boughtIngredients.Count == 0)
         {
             return false;
         }
@@ -69,11 +67,11 @@ public class GameVariables : MonoBehaviour
     {
         string boughtIngredientsList = "";
 
-        for (int i = 0; i < ingredientVarietyCount; i++)
+        for (int i = 0; i < boughtIngredients.Count; i++)
         {
             boughtIngredientsList += boughtIngredients[i];
 
-            if (i + 1 != ingredientVarietyCount)
+            if (i + 1 != boughtIngredients.Count)
             {
                 boughtIngredientsList += ";";
             }
