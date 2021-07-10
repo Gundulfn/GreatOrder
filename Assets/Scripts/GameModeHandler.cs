@@ -10,6 +10,9 @@ public class GameModeHandler : MonoBehaviour
     [SerializeField]
     private GameObject gameControllerObj;
 
+    [SerializeField]
+    private GameOverInfoHandler gameOverInfoHandler;
+
     //Race against time
     private const float DEFAULT_TIME = 5;
     private float currentTime = DEFAULT_TIME;
@@ -18,17 +21,6 @@ public class GameModeHandler : MonoBehaviour
     
     void Update()
     {
-        if(!gameControllerObj.activeSelf)
-        {
-            if(Input.GetKeyDown(KeyCode.R))
-            {
-                CameraMovement.Reset();
-                SceneManager.LoadScene(0, LoadSceneMode.Single);
-            }
-
-            return;
-        }
-
         if (hasGameStarted)
         {
             if (currentTime > 1)
@@ -39,7 +31,6 @@ public class GameModeHandler : MonoBehaviour
             else
             {
                 topText.SetText("Time's up");
-                PointCalculator.GetTotalPoint();
 
                 gameControllerObj.GetComponent<IngredientSpawn>().DestroyMovingIngredient();
                 gameControllerObj.SetActive(false);

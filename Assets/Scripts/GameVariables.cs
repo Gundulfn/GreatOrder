@@ -9,14 +9,16 @@ public class GameVariables : MonoBehaviour
     private static int ingredientVarietyCount;
     private static string[] boughtIngredients = new string[50];
 
-    void Start()
+    void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
+    }
 
+    void Start()
+    {
         money = PlayerPrefs.GetInt("money", DEFAULT_MONEY_AMOUNT);
 
-        Debug.Log(PlayerPrefs.GetString("boughtIngredients", ""));
-        if (PlayerPrefs.GetString("boughtIngredients", "").Contains(";"))
+        if (PlayerPrefs.GetString("boughtIngredients", "") != "")
         {
             boughtIngredients = PlayerPrefs.GetString("boughtIngredients", "").Split(';');
             ingredientVarietyCount = boughtIngredients.Length;

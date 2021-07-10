@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class OrderMovement : MonoBehaviour
 {
+    [SerializeField]
+    private CameraMovement cameraMovement;
     private float ingredientThickness;
     private float targetY;
 
@@ -57,10 +59,7 @@ public class OrderMovement : MonoBehaviour
 
     public void StopMovement()
     {
-        if (transform.position.y < -6)
-        {
-            CameraMovement.SetTargetPos(new Vector3(0, transform.position.y / 2, transform.position.y));
-        }
+        cameraMovement.SetTargetPos(new Vector3(0, transform.position.y / 2, transform.position.y));
     }
 
     public void Reset()

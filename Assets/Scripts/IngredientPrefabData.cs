@@ -11,8 +11,6 @@ public class IngredientPrefabData : MonoBehaviour
         string path = "Prefabs/" + ingredientName;
         GameObject ingredientPrefab = (GameObject)Resources.Load(path);
         
-        Debug.Log(ingredientName);
-        Debug.Log(ingredientPrefab.name);
         boughtIngredientPrefabs.Add(ingredientPrefab);
     }
 

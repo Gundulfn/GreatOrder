@@ -35,7 +35,7 @@ public class IngredientInfoUI : MonoBehaviour
         }
         else
         {
-            Debug.Log("Can't buy");
+            // Can't buy notification
         }
     }
 }

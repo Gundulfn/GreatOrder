@@ -2,9 +2,8 @@ using UnityEngine;
 
 public class PointCalculator
 {
-    private static int posPoint;
-    private static int placedIngredientCount;
-    private static int noicePointCount;
+    private static int posPoint, placedIngredientCount;
+    private static int noicePointCount, highestNoiceCount;
 
     private const float NOICE_LIMIT = .1f;
     private const float BAD_LIMIT = .5f;
@@ -21,6 +20,11 @@ public class PointCalculator
         {
             posPoint += NOICE_POINT;
             noicePointCount++;
+
+            if(noicePointCount > highestNoiceCount)
+            {
+                highestNoiceCount = noicePointCount;
+            }
         }
         else if(ingredientPos >= BAD_LIMIT)
         {
@@ -39,9 +43,9 @@ public class PointCalculator
         int totalPoint = posPoint + GameVariables.GetIngredientVar() * placedIngredientCount;
 
         //Reset point variables
+        posPoint = 0;
         placedIngredientCount = 0;
         noicePointCount = 0;
-        posPoint = 0;
 
         Money.IncreaseMoneyAmount(totalPoint);
         return totalPoint;
@@ -55,5 +59,13 @@ public class PointCalculator
     public static int GetSpeedExtra()
     {
         return noicePointCount;
+    }
+
+    public static int GetHighestCombo()
+    {
+        int value = highestNoiceCount;
+        highestNoiceCount = 0;
+
+        return value;
     }
 }
