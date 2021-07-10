@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class OrderMovement : MonoBehaviour
 {
+    [SerializeField]
+    private CameraMovement cameraMovement;
     private float ingredientThickness;
     private float targetY;
 
@@ -17,7 +19,7 @@ public class OrderMovement : MonoBehaviour
     {
         if (isMoving)
         {
-            transform.position = new Vector2(0, targetY);
+            transform.position = new Vector3(0, targetY, transform.position.z);
             isMoving = false;
         }
 
@@ -42,11 +44,11 @@ public class OrderMovement : MonoBehaviour
 
         if (isMoving)
         {
-            Vector2 movement = Vector2.MoveTowards(transform.position, new Vector2(0, targetY), 5 * Time.deltaTime);
+            Vector3 movement = Vector3.MoveTowards(transform.position, new Vector3(0, targetY, transform.position.z), 5 * Time.deltaTime);
 
             if (movement.y <= targetY)
             {
-                transform.position = new Vector2(0, targetY);
+                transform.position = new Vector3(0, targetY, transform.position.z);
             }
             else
             {
@@ -57,10 +59,7 @@ public class OrderMovement : MonoBehaviour
 
     public void StopMovement()
     {
-        if (transform.position.y < -6)
-        {
-            CameraMovement.SetTargetPos(new Vector3(0, transform.position.y / 2, transform.position.y));
-        }
+        cameraMovement.SetTargetPos(new Vector3(0, transform.position.y / 2, transform.position.y));
     }
 
     public void Reset()

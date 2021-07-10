@@ -10,44 +10,32 @@ public class GameModeHandler : MonoBehaviour
     [SerializeField]
     private GameObject gameControllerObj;
 
+    [SerializeField]
+    private GameOverInfoHandler gameOverInfoHandler;
+
     //Race against time
     private const float DEFAULT_TIME = 5;
     private float currentTime = DEFAULT_TIME;
 
     private static bool hasGameStarted;
     
-    void Start()
-    {
-        GameVariables.Initialize();
-    }
-    
     void Update()
     {
-        if(!gameControllerObj.activeSelf)
-        {
-            if(Input.GetKeyDown(KeyCode.R))
-            {
-                CameraMovement.Reset();
-                SceneManager.LoadScene(0, LoadSceneMode.Single);
-            }
-
-            return;
-        }
-
         if (hasGameStarted)
         {
             if (currentTime > 1)
             {
                 currentTime -= Time.deltaTime;
-                topText.SetText((int)currentTime + " time left");
+                topText.SetText((int)currentTime + " seconds left");
             }
             else
             {
                 topText.SetText("Time's up");
 
-                Debug.Log(PointCalculator.GetTotalPoint());
                 gameControllerObj.GetComponent<IngredientSpawn>().DestroyMovingIngredient();
                 gameControllerObj.SetActive(false);
+                
+                Reset();
             }
         }
         else
@@ -59,5 +47,11 @@ public class GameModeHandler : MonoBehaviour
     public static void StartGame()
     {
         hasGameStarted = true;
+        Time.timeScale = 1;
+    }
+
+    public static void Reset()
+    {
+        hasGameStarted = false;
     }
 }

@@ -2,23 +2,44 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    private static Vector3 targetPos = Vector3.one;
+    private Vector3 targetPos = Vector3.one;
 
-    public static void SetTargetPos(Vector3 pos)
-    {
-        targetPos = pos;
-    }
+    [SerializeField]
+    private GameOverInfoHandler gameOverInfoHandler;
 
-    public static void Reset()
+    private float prevLength;
+    public void SetTargetPos(Vector3 pos)
     {
-        targetPos = Vector3.one;
+        if (pos.z < -6)
+        {
+            targetPos = pos;
+        }
+        else
+        {
+            GameOver();
+        }
     }
 
     void Update()
     {
-        if(targetPos != Vector3.one)
+        if (targetPos != Vector3.one)
         {
-            transform.position = Vector3.MoveTowards(transform.position, targetPos, 5 * Time.deltaTime);
+            if (prevLength == Vector3.MoveTowards(transform.position, targetPos, 5 * Time.deltaTime).sqrMagnitude)
+            {
+                GameOver();
+                targetPos = Vector3.one;
+            }
+            else
+            {
+                prevLength = Vector3.MoveTowards(transform.position, targetPos, 5 * Time.deltaTime).sqrMagnitude;
+                transform.position = Vector3.MoveTowards(transform.position, targetPos, 5 * Time.deltaTime);
+            }
         }
+    }
+
+    private void GameOver()
+    {
+        gameOverInfoHandler.gameObject.SetActive(true);
+        gameOverInfoHandler.SetGameOverInfo();
     }
 }

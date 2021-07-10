@@ -6,9 +6,6 @@ public class IngredientSpawn : MonoBehaviour
     private GameObject breadObject;
 
     [SerializeField]
-    private GameObject[] ingredients;
-
-    [SerializeField]
     private OrderMovement orderMovement;
 
     private Transform placedIngredient;
@@ -16,7 +13,7 @@ public class IngredientSpawn : MonoBehaviour
 
     public void SpawnIngredient(int round = 1)
     {
-        int randomInt = Random.Range(0, ingredients.Length);
+        GameObject ingredientPrefab = IngredientPrefabData.GetRandomIngredient();
 
         if (spawnedIngredient)
         {
@@ -27,11 +24,11 @@ public class IngredientSpawn : MonoBehaviour
             Destroy(spawnedIngredient);
         }
 
-        orderMovement.Move(ingredients[randomInt].transform.lossyScale.y / 2);
+        orderMovement.Move(ingredientPrefab.transform.lossyScale.y / 2);
 
-        GameObject obj = Instantiate(ingredients[randomInt]);
+        GameObject obj = Instantiate(ingredientPrefab);
         obj.transform.parent = orderMovement.transform;
-        obj.transform.position = new Vector2(-1, 0);
+        obj.transform.position = new Vector3(-1, 0, orderMovement.transform.position.z);
 
         spawnedIngredient = obj.GetComponent<MovementController>();
     }
@@ -46,18 +43,24 @@ public class IngredientSpawn : MonoBehaviour
 
     public void DestroyMovingIngredient()
     {
+        Vector3 spawnPos;
+
         if (placedIngredient)
         {
-            Instantiate(breadObject, new Vector2(0, placedIngredient.position.y + placedIngredient.lossyScale.y / 2 + breadObject.transform.lossyScale.y / 2), Quaternion.identity);
+            spawnPos = new Vector3(0, 
+                                   placedIngredient.position.y + placedIngredient.lossyScale.y / 2 + breadObject.transform.lossyScale.y / 2,
+                                   orderMovement.transform.position.z);
         }
         else
         {
             orderMovement.Reset();
-            Instantiate(breadObject, new Vector2(0, breadObject.transform.lossyScale.y), Quaternion.identity);
+            spawnPos = new Vector3(0, breadObject.transform.lossyScale.y, orderMovement.transform.position.z);
         }
 
+        GameObject breadObj = Instantiate(breadObject, spawnPos, Quaternion.identity);
+        breadObj.transform.parent = orderMovement.transform;
+        
         orderMovement.StopMovement();
-
         Destroy(spawnedIngredient.gameObject);
     }
 }
