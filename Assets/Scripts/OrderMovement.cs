@@ -4,16 +4,11 @@ public class OrderMovement : MonoBehaviour
 {
     [SerializeField]
     private CameraMovement cameraMovement;
-    private float ingredientThickness;
+    public float ingredientThickness;
     private float targetY;
 
     private bool isMoving;
     private bool isFirstMove = true;
-
-    void Start()
-    {
-        ingredientThickness = transform.lossyScale.y / 2;
-    }
 
     public void Move(float ingredientThickness)
     {
@@ -27,15 +22,11 @@ public class OrderMovement : MonoBehaviour
         {
             GameModeHandler.StartGame();
 
-            transform.Translate(new Vector2(0, -ingredientThickness));
+            
             isFirstMove = false;
         }
-        else
-        {
-            targetY = transform.position.y - (this.ingredientThickness + ingredientThickness);
-        }
-
-        this.ingredientThickness = ingredientThickness;
+        
+        transform.Translate(new Vector2(0, -ingredientThickness));
     }
 
     void Update()

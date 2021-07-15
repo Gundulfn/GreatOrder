@@ -24,7 +24,7 @@ public class IngredientSpawn : MonoBehaviour
             Destroy(spawnedIngredient);
         }
 
-        orderMovement.Move(ingredientPrefab.transform.lossyScale.y / 2);
+        orderMovement.Move(ingredientPrefab.GetComponent<MovementController>().thickness);
 
         GameObject obj = Instantiate(ingredientPrefab);
         obj.transform.parent = orderMovement.transform;

@@ -7,6 +7,8 @@ public class MovementController : MonoBehaviour
 
     public float currentSpeed;
 
+    public float thickness;
+
     void Update()
     {
         if (currentSpeed == 0)
