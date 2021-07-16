@@ -4,11 +4,24 @@ public class OrderMovement : MonoBehaviour
 {
     [SerializeField]
     private CameraMovement cameraMovement;
-    public float ingredientThickness;
+
+    public float defaultThickness
+    {
+        get;
+        private set;
+    }
+
+    private float ingredientThickness;
     private float targetY;
 
     private bool isMoving;
     private bool isFirstMove = true;
+
+    void Start()
+    {
+        defaultThickness = GetComponent<SpriteRenderer>().sprite.bounds.size.y;
+        ingredientThickness = defaultThickness;
+    }
 
     public void Move(float ingredientThickness)
     {
@@ -21,12 +34,11 @@ public class OrderMovement : MonoBehaviour
         if (isFirstMove)
         {
             GameModeHandler.StartGame();
-
-            
             isFirstMove = false;
         }
-        
-        transform.Translate(new Vector2(0, -ingredientThickness));
+
+        targetY = transform.position.y + -(this.ingredientThickness + ingredientThickness) / 2;
+        this.ingredientThickness = ingredientThickness;
     }
 
     void Update()
@@ -50,11 +62,11 @@ public class OrderMovement : MonoBehaviour
 
     public void StopMovement()
     {
-        cameraMovement.SetTargetPos(new Vector3(0, transform.position.y / 2, transform.position.y));
+        cameraMovement.MoveCamera(transform.position.y / 2);
     }
 
     public void Reset()
     {
-        transform.position = Vector2.zero;
+        transform.position = new Vector3(0, 0, transform.position.z);
     }
 }

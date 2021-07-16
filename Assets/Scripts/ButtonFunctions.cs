@@ -3,9 +3,17 @@ using UnityEngine.SceneManagement;
 
 public class ButtonFunctions : MonoBehaviour
 {
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space) && SceneManager.GetActiveScene().name == "EntranceScene")
+        {
+            StartGame();
+        }
+    }
+
     public void StartGame()
     {
-        Money.IncreaseMoneyAmount(200);
+        Money.IncreaseMoneyAmount(1000);
         SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
     }
 

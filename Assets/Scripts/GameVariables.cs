@@ -20,7 +20,7 @@ public class GameVariables : MonoBehaviour
         if (PlayerPrefs.GetString("boughtIngredients", "") != "")
         {
             string[] values = PlayerPrefs.GetString("boughtIngredients", "").Split(';');
-
+            
             for (int i = 0; i < values.Length; i++)
             {
                 boughtIngredients.Add(values[i]);

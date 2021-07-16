@@ -2,17 +2,21 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    private Vector3 targetPos = Vector3.one;
-
     [SerializeField]
     private GameOverInfoHandler gameOverInfoHandler;
 
-    private float prevLength;
-    public void SetTargetPos(Vector3 pos)
+    private const float TARGET_SIZE = 15;
+    private const float MOVEMENT_START_THRESHOLD = -6;
+
+    private bool isCameraMoving;
+    private Vector3 targetPos;
+
+    public void MoveCamera(float value)
     {
-        if (pos.z < -6)
+        if (value < MOVEMENT_START_THRESHOLD)
         {
-            targetPos = pos;
+            targetPos = new Vector3(0, value, 0);
+            isCameraMoving = true;
         }
         else
         {
@@ -22,17 +26,17 @@ public class CameraMovement : MonoBehaviour
 
     void Update()
     {
-        if (targetPos != Vector3.one)
+        if (isCameraMoving)
         {
-            if (prevLength == Vector3.MoveTowards(transform.position, targetPos, 5 * Time.deltaTime).sqrMagnitude)
+            if (Camera.main.orthographicSize < TARGET_SIZE || Vector3.Distance(transform.position, targetPos) > .5f)
             {
-                GameOver();
-                targetPos = Vector3.one;
+                Camera.main.orthographicSize += Time.deltaTime * 5;
+                transform.position = Vector3.MoveTowards(transform.position, targetPos, 5 * Time.deltaTime);
             }
             else
             {
-                prevLength = Vector3.MoveTowards(transform.position, targetPos, 5 * Time.deltaTime).sqrMagnitude;
-                transform.position = Vector3.MoveTowards(transform.position, targetPos, 5 * Time.deltaTime);
+                GameOver();
+                isCameraMoving = false;
             }
         }
     }

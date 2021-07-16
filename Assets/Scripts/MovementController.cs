@@ -4,10 +4,7 @@ public class MovementController : MonoBehaviour
 {
     private int moveSpeed = 1;
     private int direction = 1;
-
-    public float currentSpeed;
-
-    public float thickness;
+    private float currentSpeed;
 
     void Update()
     {
