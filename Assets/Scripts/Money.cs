@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class Money
 {
     private static bool isInitialized;
