@@ -13,7 +13,6 @@ public class ButtonFunctions : MonoBehaviour
 
     public void StartGame()
     {
-        Money.IncreaseMoneyAmount(1000);
         SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
     }
 
