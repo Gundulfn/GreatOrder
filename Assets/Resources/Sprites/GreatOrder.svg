@@ -41,9 +41,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.11"
-     inkscape:cx="11770.744"
-     inkscape:cy="-1742.445"
+     inkscape:zoom="0.45254834"
+     inkscape:cx="3011.3728"
+     inkscape:cy="1652.9871"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -53,6 +53,102 @@
      showguides="true" />
   <defs
      id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3016">
+      <stop
+         style="stop-color:#ff1103;stop-opacity:1;"
+         offset="0"
+         id="stop3012" />
+      <stop
+         style="stop-color:#ff1103;stop-opacity:0;"
+         offset="1"
+         id="stop3014" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3008">
+      <stop
+         style="stop-color:#ff1103;stop-opacity:1;"
+         offset="0"
+         id="stop3004" />
+      <stop
+         style="stop-color:#ff1103;stop-opacity:0;"
+         offset="1"
+         id="stop3006" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2994">
+      <stop
+         style="stop-color:#ff1103;stop-opacity:1;"
+         offset="0"
+         id="stop2990" />
+      <stop
+         style="stop-color:#ff1103;stop-opacity:0;"
+         offset="1"
+         id="stop2992" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2986">
+      <stop
+         style="stop-color:#ff1103;stop-opacity:1;"
+         offset="0"
+         id="stop2982" />
+      <stop
+         style="stop-color:#ff1103;stop-opacity:0;"
+         offset="1"
+         id="stop2984" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2978">
+      <stop
+         style="stop-color:#c10000;stop-opacity:1;"
+         offset="0"
+         id="stop2974" />
+      <stop
+         style="stop-color:#c10000;stop-opacity:0;"
+         offset="1"
+         id="stop2976" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2051">
+      <stop
+         style="stop-color:#ffb804;stop-opacity:1;"
+         offset="0"
+         id="stop2047" />
+      <stop
+         style="stop-color:#ffb804;stop-opacity:0;"
+         offset="1"
+         id="stop2049" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1143">
+      <stop
+         style="stop-color:#ff3636;stop-opacity:1;"
+         offset="0"
+         id="stop1139" />
+      <stop
+         style="stop-color:#ff3636;stop-opacity:0;"
+         offset="1"
+         id="stop1141" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1133">
+      <stop
+         style="stop-color:#ffc300;stop-opacity:1;"
+         offset="0"
+         id="stop1129" />
+      <stop
+         style="stop-color:#ffc300;stop-opacity:0;"
+         offset="1"
+         id="stop1131" />
+    </linearGradient>
     <linearGradient
        inkscape:collect="always"
        id="linearGradient4675">
@@ -139,11 +235,109 @@
        x2="-179.94516"
        y2="80.423691"
        gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1133"
+       id="linearGradient1135"
+       x1="3162.364"
+       y1="-60.698166"
+       x2="3162.364"
+       y2="1859.3427"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(2.2845917e-5,-4.2716816e-6)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1143"
+       id="linearGradient1145"
+       x1="3159.46"
+       y1="1743.8544"
+       x2="3159.46"
+       y2="1708.7754"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(2.2845917e-5,-4.2716816e-6)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2051"
+       id="linearGradient2053"
+       x1="3587.6165"
+       y1="-21.385729"
+       x2="3442.6965"
+       y2="-21.385729"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(4.0331181e-6,-3.9180463e-6)" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2978"
+       id="radialGradient2980"
+       cx="4636.4905"
+       cy="1335.3435"
+       fx="4636.4905"
+       fy="1335.3435"
+       r="482.86456"
+       gradientTransform="matrix(1,0,0,0.25,0,1001.5076)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2986"
+       id="linearGradient2988"
+       x1="3565.6736"
+       y1="-18.342907"
+       x2="3472.8838"
+       y2="-18.342907"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2994"
+       id="linearGradient2996"
+       x1="-3527.4333"
+       y1="20.706705"
+       x2="-3512.1245"
+       y2="20.706705"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2994"
+       id="linearGradient3002"
+       gradientUnits="userSpaceOnUse"
+       x1="3565.6736"
+       y1="-18.342907"
+       x2="3524.7717"
+       y2="-18.342907" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3008"
+       id="linearGradient3010"
+       x1="-3508.0029"
+       y1="20.706704"
+       x2="-3493.9365"
+       y2="20.706703"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3016"
+       id="linearGradient3018"
+       x1="-3488.5725"
+       y1="20.706705"
+       x2="-3474.6521"
+       y2="20.706705"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <rect
+       inkscape:export-ydpi="96"
+       inkscape:export-xdpi="96"
+       inkscape:export-filename="C:\Users\user\Desktop\unity-projects\Great Order\Assets\Resources\Sprites\UI\IngredientShopIcons\LettuceIcon.png"
+       rx="25.724691"
+       ry="25.724691"
+       y="-309.21191"
+       x="978.89935"
+       height="167.79517"
+       width="167.79517"
+       id="rect3028"
+       style="opacity:1;fill:#ffffff;fill-opacity:0.3137255;fill-rule:nonzero;stroke:none;stroke-width:5.00000014;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill" />
     <path
        sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccc"
        inkscape:connector-curvature="0"
@@ -210,8 +404,8 @@
        inkscape:connector-curvature="0" />
     <path
        id="path559"
-       style="fill:#00ff00;fill-opacity:1;stroke-width:0.17257801"
-       d="m 639.77848,-125.73877 v 0.0146 a 9.6773196,4.4415473 0 0 0 -9.10244,4.43163 9.6773196,4.4415473 0 0 0 9.10244,4.43162 v 0.008 h 0.45475 a 9.6773196,4.4415473 0 0 0 0.1204,0.002 9.6773196,4.4415473 0 0 0 0.1204,-0.002 h 133.24236 a 9.6773196,4.4415473 0 0 0 0.1204,0.002 9.6773196,4.4415473 0 0 0 0.12041,-0.002 h 0.0686 v -0.001 a 9.6773196,4.4415473 0 0 0 9.48802,-4.43822 9.6773196,4.4415473 0 0 0 -9.48802,-4.44053 v -0.006 z"
+       style="fill:#00ff00;fill-opacity:1;stroke-width:0.17257796"
+       d="m 579.1048,-208.04221 -7e-4,0.0262 a 17.266187,7.9245688 0 0 0 -16.24046,7.90679 17.266187,7.9245688 0 0 0 16.24046,7.90705 v 0.0196 l 0.8113,-2e-5 a 17.266187,7.9245688 0 0 0 0.2152,0.003 17.266187,7.9245688 0 0 0 0.2151,-0.004 l 237.7298,-1.1e-4 a 17.266187,7.9245688 0 0 0 0.2146,0.004 17.266187,7.9245688 0 0 0 0.2152,-0.004 l 0.1225,10e-4 -8e-4,-4.5e-4 a 17.266187,7.9245688 0 0 0 16.9284,-7.9186 17.266187,7.9245688 0 0 0 -16.9284,-7.92276 v -0.0183 z"
        inkscape:export-filename="C:\Users\Yesim\Desktop\Burak\Inkscape Files\Lettuce.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"
@@ -247,13 +441,14 @@
        inkscape:export-ydpi="96" />
     <g
        id="g55081"
-       transform="translate(750.47273,-218.3396)"
+       transform="matrix(1.7841912,0,0,1.7841912,776.6045,-344.49323)"
        inkscape:export-filename="C:\Users\Yesim\Desktop\Burak\Inkscape Files\Lettuce.png"
        inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96">
+       inkscape:export-ydpi="96"
+       style="stroke-width:0.56047809">
       <path
          id="path43929"
-         style="fill:#00ff00;stroke:none;stroke-width:0.26458299px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="fill:#00ff00;stroke:none;stroke-width:0.14829296px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m -32.879159,74.161632 c -4.32195,-0.08941 -10.418485,2.068608 -10.418485,2.068608 0,0 -5.678461,1.002612 -9.960631,-2.494939 -4.282159,-3.497551 -7.230268,3.728464 -10.941452,2.997232 -2.658959,-0.523909 -4.215389,-1.558621 -8.321971,-2.67322 -3.824758,-1.038101 -4.959691,1.47339 -7.486883,2.013831 -1.453896,0.310917 -2.131885,0.571058 -4.404333,0.70441 -1.660245,0.09743 -1.70715,0.618676 -4.459208,-0.330274 -6.120096,-2.110295 -9.377347,-0.304019 -9.377347,-0.304019 0,0 -1.105749,0.453262 -4.932811,-0.247558 -3.63223,-0.665144 -3.78875,0.388647 -7.64451,0.06902 -4.59401,-0.380828 -10.12701,1.38995 -10.07986,5.161797 0.0418,3.34546 5.69709,3.78787 7.37115,4.3 3.9043,1.1944 6.43488,1.22397 10.35311,0.11689 3.452876,-0.92519 6.148309,0.8601 6.148309,0.8601 0,0 3.954543,1.64385 8.29425,-0.61468 1.719155,-0.89471 3.025536,-0.53091 4.596658,-0.24108 1.571123,0.28982 3.406988,0.50567 3.406988,0.50567 0,0 3.92671,1.12962 8.148341,0.68212 3.784206,-0.40113 6.611723,-1.26242 8.98343,-1.34359 3.614375,-0.12368 6.06398,4.3895 10.346139,1.9172 4.28216,-2.47231 10.29136,-1.52032 10.29136,-1.52032 0,0 6.927917,1.76349 11.154876,1.14308 3.928232,-0.57656 7.169108,-1.66581 10.464477,-1.67276 2.964556,-0.006 4.971418,2.09727 7.664648,1.37562 2.69322,-0.72165 7.6993643,1.00492 9.1586128,0.61392 1.4592406,-0.39101 4.46484372,-1.74408 4.46484372,-1.74408 0,0 3.91542318,-0.68575 9.31777808,0.74517 6.9283424,1.83512 6.1056554,0.51654 9.4226804,-0.26251 2.683939,-0.63037 4.05238,-1.06557 8.905399,-1.06557 8.37294,0.64353 6.643674,-9.756885 -0.132269,-6.902782 -4.853019,0 -5.052462,-1.199195 -7.913211,-1.930117 -3.62426,-0.925989 -6.000075,-2.994856 -11.6716394,-0.513146 -3.1360202,1.37223 -3.3322615,0.652378 -4.8611645,0.647801 -1.528903,-0.0046 -2.96833228,-0.319138 -2.96833228,-0.319138 0,0 -4.42774122,-0.659733 -6.15156242,-0.617535 -1.5601103,0.03815 -5.1424784,0.800277 -8.2987164,0.837676 -2.880032,0.03414 -4.307584,0.103367 -7.364643,-0.07747 -3.107621,-0.183829 -4.78573,0.05218 -8.912399,-1.512093 -0.644793,-0.24442 -1.391238,-0.357063 -2.1916,-0.373621 z"
          sodipodi:nodetypes="ccsssssscssssccsscssscsssscssccsssccssscc"
          inkscape:export-filename="C:\Users\Yesim\Desktop\Burak\Inkscape Files\LettuceExtra.png"
@@ -262,7 +457,7 @@
          inkscape:connector-curvature="0" />
       <path
          id="path47375"
-         style="fill:#a5ffa5;fill-opacity:1;stroke:none;stroke-width:0.26458299px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="fill:#a5ffa5;fill-opacity:1;stroke:none;stroke-width:0.14829296px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m -5.8322032,80.673255 0.30489,0.0181 c -6.4771098,0.05325 -12.4604498,0.07736 -15.6326298,0.03928 -1.20938,-1.051539 -3.10198,-2.509748 -4.53392,-3.142009 0.64831,1.096245 1.51698,2.200624 2.25757,3.075863 -0.003,-2.65e-4 -0.0139,-7.94e-4 -0.0171,-0.0011 -1.01511,-0.106852 -7.73226,-0.07137 -15.41766,0.0021 -0.70634,-0.838721 -2.37615,-2.170316 -3.8809,-3.050458 0.77064,1.726221 1.60029,2.711212 1.83813,3.070612 -4.63697,0.04721 -9.029519,0.09896 -13.118062,0.147277 -0.714896,-0.896678 -3.299671,-4.070643 -4.800221,-4.998143 0.766516,1.814433 2.50767,4.617355 2.760554,5.0214 -4.531784,0.05294 -8.03583,0.09059 -8.392253,0.07183 -0.310039,-0.0163 -4.086175,0.0325 -8.525579,0.091 -0.833342,-0.805154 -3.985029,-3.788344 -5.807397,-4.655016 0.952949,1.735571 3.158426,4.450194 3.351733,4.687056 -5.72312,0.075 -11.903294,0.15082 -15.559256,0.15864 -0.573979,-0.685555 -3.306924,-3.898803 -4.871019,-4.813658 0.812615,1.820244 2.733172,4.711178 2.799313,4.810558 -0.36004,-0.005 -0.642194,-0.012 -0.779283,-0.0222 -1.163309,-0.0871 -7.941807,0.0134 -13.119097,0.28629 -0.90118,-1.057081 -3.22518,-3.699464 -4.61677,-4.51342 0.69925,1.566312 2.22222,3.93028 2.67684,4.62452 -1.59682,0.10989 -6.53716,0.10727 -7.21868,0.25891 -0.4134,0.092 4.64125,0.31847 6.75256,0.40669 -0.69907,0.51723 -1.6358,1.31566 -2.11719,2.17507 1.05594,-0.49225 2.71643,-1.43432 3.87263,-2.10685 5.47258,0.18781 13.527875,0.33225 13.527875,0.33225 0,0 0.844849,-0.005 0.868164,-0.005 -0.633851,0.78801 -1.784551,2.26506 -2.365748,3.30264 1.254551,-0.58483 3.265991,-2.35319 4.311367,-3.31401 1.334291,-0.008 9.252029,-0.0548 15.814537,-0.0941 -0.694959,0.69518 -2.28142,2.3216 -3.047359,3.43338 1.627203,-0.61675 4.311684,-2.57719 5.462717,-3.44785 6.804239,-0.0404 9.639276,-0.0562 17.235122,-0.0977 -0.360283,0.46092 -1.999128,2.58291 -2.733167,3.96772 1.497132,-0.73752 4.073271,-3.2573 4.795057,-3.97857 4.484513,-0.0241 9.235302,-0.0509 12.876732,-0.0677 -0.49563,0.73962 -1.417492,2.246573 -2.087212,3.442173 1.46685,-0.68381 3.473392,-2.652303 4.231782,-3.451473 5.18965,-0.0225 8.99133,-0.0336 9.46092,-0.0202 0.60765,0.0174 3.11644,0.0104 6.36809,-0.007 -0.66433,0.61709 -2.17497,2.05563 -2.90473,3.03908 1.55279,-0.54643 4.11505,-2.28376 5.2126,-3.05459 6.15771,-0.0385 10.84196,-0.0794 15.2254298,-0.11989 -0.61038,0.77023 -2.6006698,3.3129 -3.3992798,4.72323 1.7746098,-0.81834 4.7251398,-4.00734 5.3898498,-4.74079 1.05862,-0.0103 4.4397,-0.0386 4.27054,-0.0382 -0.43714,8e-4 3.31156,0.0636 7.67602,0.12145 -0.48767,0.63525 -1.6102301,2.379574 -2.3125901,3.633454 1.37268,-0.6399 3.1422301,-2.595314 4.0814803,-3.609164 5.90655,0.071 10.12457,0.0232 10.97065,-0.10694 15.834313,3.00138 14.752765,-4.209957 -0.17493,-1.890849 -1.43086,0.07735 -5.74406,0.16482 -11.01948,0.244946 -0.8576102,-1.009301 -2.2630902,-2.032275 -3.6840202,-2.863389 0.69527,1.557382 1.21226,2.183635 1.67639,2.892845 -3.67838,0.05179 -7.59453,0.09768 -11.55847,0.133842 -0.598,-0.707948 -3.84318,-3.820437 -3.84318,-3.820437 0,0 0.76068,1.620572 1.46761,3.818882 z"
          sodipodi:nodetypes="cccccccccccccccccccccccscccccccccccccccccccccccccccccccccccc"
          inkscape:export-filename="C:\Users\Yesim\Desktop\Burak\Inkscape Files\LettuceExtra.png"
@@ -273,7 +468,7 @@
     <path
        id="path5187"
        style="color:#000000;fill:#ffb900;fill-opacity:1;stroke-width:0.33242199"
-       d="m 722.63337,-92.426363 h -27.99238 v 0 c 0,0 8.27473,6.945889 13.99686,9.591595 6.97852,-3.836585 13.99552,-9.591595 13.99552,-9.591595 z"
+       d="m 737.76613,-253.17775 h -31.7102 v 0 c 0,0 9.3739,7.8684 15.8559,10.86549 7.9054,-4.34613 15.8543,-10.86549 15.8543,-10.86549 z"
        inkscape:export-filename="C:\Users\Yesim\Desktop\Burak\Inkscape Files\CheddarCheeseExtra.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"
@@ -282,7 +477,7 @@
     <path
        id="path5207"
        style="fill:#ffb900;fill-opacity:1;stroke-width:0.133829"
-       d="m 646.29984,-92.408298 v -0.0094 a 9.0658125,2.851075 0 0 1 -8.52726,-2.844705 9.0658125,2.851075 0 0 1 8.52726,-2.844705 v -0.005 h 0.42601 a 9.0658125,2.851075 0 0 1 0.11267,-0.0013 9.0658125,2.851075 0 0 1 0.11289,0.0013 h 124.8228 a 9.0658125,2.851075 0 0 1 0.11266,-0.0013 9.0658125,2.851075 0 0 1 0.1129,0.0013 h 0.0641 v 7.07e-4 a 9.0658125,2.851075 0 0 1 8.88846,2.848937 9.0658125,2.851075 0 0 1 -8.88846,2.850422 v 0.0037 z"
+       d="m 651.2945,-253.15729 v -0.0102 a 10.26988,3.229738 0 0 1 -9.65985,-3.22252 10.26988,3.229738 0 0 1 9.65985,-3.22253 v -0.006 h 0.48258 a 10.26988,3.229738 0 0 1 0.12767,-10e-4 10.26988,3.229738 0 0 1 0.12789,10e-4 h 141.40099 a 10.26988,3.229738 0 0 1 0.1276,-10e-4 10.26988,3.229738 0 0 1 0.1279,10e-4 h 0.072 v 8e-4 a 10.26988,3.229738 0 0 1 10.069,3.22732 10.26988,3.229738 0 0 1 -10.069,3.229 v 0.005 z"
        inkscape:export-filename="C:\Users\Yesim\Desktop\Burak\Inkscape Files\CheddarCheese.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"
@@ -290,17 +485,17 @@
     <ellipse
        style="fill:#ffd35d;fill-opacity:1;stroke-width:0;stroke-opacity:0"
        id="path5808"
-       cx="481.05756"
-       cy="396.29266"
-       rx="2.0190339"
-       ry="3.2998679"
+       cx="628.51062"
+       cy="275.31375"
+       rx="2.28719"
+       ry="3.7381368"
        transform="matrix(0.77015899,-0.63785197,0.83634149,0.54820882,0,0)"
        inkscape:export-filename="C:\Users\Yesim\Desktop\Burak\Inkscape Files\CheddarCheeseExtra.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
-       style="color:#000000;fill:#000000;fill-opacity:0.28629001;stroke-width:0.26458299px"
-       d="m 714.08811,-86.056447 8.2566,-7.331417 c 0,0 1.64568,-2.079738 0.32277,-4.857862 4.22198,0.0822 50.65651,0.136012 50.65651,0.136012 0,0 7.45992,0.425699 7.6332,2.850884 -0.17336,2.414551 -7.6332,2.844816 -7.6332,2.848476 0,0.0037 -50.69062,-0.01601 -50.69062,-0.01601 l -2.85679,2.240637"
+       style="color:#000000;fill:#000000;fill-opacity:0.28629001;stroke-width:0.26458302px"
+       d="m 728.08603,-245.96182 9.3532,-8.30513 c 0,0 1.8642,-2.35596 0.3656,-5.50306 4.7827,0.0931 57.3844,0.15408 57.3844,0.15408 0,0 8.4508,0.48223 8.647,3.22952 -0.1964,2.73524 -8.647,3.22265 -8.647,3.2268 0,0.005 -57.4231,-0.0181 -57.4231,-0.0181 l -3.2362,2.53822"
        id="path6805"
        sodipodi:nodetypes="cccccscc"
        inkscape:export-filename="C:\Users\Yesim\Desktop\Burak\Inkscape Files\CheddarCheeseExtra.png"
@@ -1075,8 +1270,8 @@
        id="rect1172"
        width="1080"
        height="1920"
-       x="2629.0522"
-       y="-180.16875"
+       x="-500.00574"
+       y="493.35046"
        inkscape:export-filename="C:\Users\user\Desktop\unity-projects\Great Order\Assets\Resources\Sprites\UI\Background.png"
        inkscape:export-xdpi="31.961666"
        inkscape:export-ydpi="31.961666" />
@@ -1339,11 +1534,11 @@
            height="7256.6929"
            x="9936.5215"
            y="-680.98828" /></flowRegion><flowPara
-         id="flowPara2706"></flowPara></flowRoot>    <flowRoot
+         id="flowPara2706" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot3207"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.17389977"
-       transform="matrix(1.5214703,0,0,1.5214703,-12489.122,858.85155)"><flowRegion
+       transform="matrix(1.5214703,0,0,1.5214703,-15618.18,1532.3708)"><flowRegion
          id="flowRegion3209"
          style="text-align:start;text-anchor:start;stroke-width:0.17389977"><rect
            id="rect3211"
@@ -1611,7 +1806,7 @@
            height="81.818184"
            x="11745.454"
            y="-732.02576" /></flowRegion><flowPara
-         id="flowPara3295"></flowPara></flowRoot>    <flowRoot
+         id="flowPara3295" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot3297"
        style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
@@ -1621,12 +1816,208 @@
            height="501.40298"
            x="11995.103"
            y="-497.39767" /></flowRegion><flowPara
-         id="flowPara3303"></flowPara></flowRoot>    <path
+         id="flowPara3303" /></flowRoot>    <path
        style="opacity:1;fill:#c70003;fill-opacity:0.98989898;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;paint-order:stroke markers fill"
        id="path4679"
        ry="25.857008"
        rx="36.68087"
        cy="455.14865"
        cx="75.165718" />
+    <path
+       style="opacity:1;fill:#ff3636;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:20, 5;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       d="m 3400.103,-114.79927 c -60.9048,0.13748 -123.5773,10.35121 -123.255,30.299446 0.7864,48.67277 -0.2078,83.86332973 -0.1173,92.3276997 l -277.8202,-0.0151 c -0.09,-0.005 -0.1787,-0.009 -0.2682,-0.0135 v 0 c -23.1258,-2e-5 -41.8729,18.7471603 -41.8729,41.8729103 v 0.0558 1642.326414 h 876.1099 V 49.670646 c -0.024,-22.67159 -18.0861,-41.2067903 -40.7495,-41.8150203 -90.4457,-0.005 -180.8912,-0.01 -271.3369,-0.0146 -0.065,-5.55797 -0.775,-68.2654897 0.021,-92.3411197 0,-18.323586 -55.2781,-31.315106 -120.7089,-30.299436 z"
+       id="rect1095"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csccccsccccccccc"
+       inkscape:export-filename="C:\Users\user\Desktop\unity-projects\Great Order\Assets\Resources\Sprites\UI\ShopPanelUI.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1117"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion1119"><rect
+           id="rect1121"
+           width="797.34784"
+           height="382.9444"
+           x="11564"
+           y="-133.4803" /></flowRegion><flowPara
+         id="flowPara1123"></flowPara></flowRoot>    <path
+       sodipodi:nodetypes="csccccsccccccccc"
+       inkscape:connector-curvature="0"
+       id="path1125"
+       d="m 3399.4654,-108.47444 c -53.5476,0.12974 -108.6493,9.769166 -108.3659,28.595746 0.6914,45.93597 -0.1827,92.6182 -0.1032,100.60663 l -282.4258,-0.0142 c -0.079,-0.005 -0.1571,-0.009 -0.2358,-0.0127 v 0 c -20.3323,-2e-5 -36.8147,17.69302 -36.8147,39.51845 v 0.0527 1631.782714 h 846.5426 V 60.217936 c -0.021,-21.3968 -15.9013,-38.88979 -35.827,-39.46381 -79.5199,-0.005 -197.1396,-0.009 -276.6596,-0.0138 -0.057,-5.24546 -0.6814,-77.8974 0.018,-100.61929 0,-17.29328 -48.6006,-29.554306 -106.1274,-28.595746 z"
+       style="opacity:1;fill:url(#linearGradient1135);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:20.00000007, 5.00000001;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       inkscape:export-filename="C:\Users\user\Desktop\unity-projects\Great Order\Assets\Resources\Sprites\UI\ShopPanelUI.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="opacity:1;fill:#ff3636;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:19.99999975, 4.99999994;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect1127"
+       width="160.86656"
+       height="88.900002"
+       x="4833.2183"
+       y="571.72736"
+       ry="16.83798"
+       rx="16.83798"
+       inkscape:export-filename="C:\Users\user\Desktop\unity-projects\Great Order\Assets\Resources\Sprites\UI\ExitShopButton.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="opacity:1;fill:url(#linearGradient1145);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:19.99999975, 4.99999994;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect1137"
+       width="850.66791"
+       height="1376.4097"
+       x="2971.52"
+       y="315.64514" />
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:0.24747476;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:19.99999975, 4.99999994;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect1147"
+       width="799.80408"
+       height="199.95102"
+       x="1430.9952"
+       y="-204.28137"
+       ry="25.724691"
+       rx="25.724691"
+       inkscape:export-filename="C:\Users\user\Desktop\unity-projects\Great Order\Assets\Resources\Sprites\UI\IngredientSlotUI.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;fill-opacity:0.12626265;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 1664.3945,-4.3511188 1778.496,-204.2648 l 95.9115,0.0138 -114.9202,199.9153712 z"
+       id="path1151"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\user\Desktop\unity-projects\Great Order\Assets\Resources\Sprites\UI\IngredientSlotUI.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       rx="16.83798"
+       ry="16.83798"
+       y="580.49713"
+       x="4841.4033"
+       height="71.360435"
+       width="144.49631"
+       id="rect1153"
+       style="opacity:1;fill:url(#linearGradient2053);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:19.99999966, 4.99999992;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       inkscape:export-filename="C:\Users\user\Desktop\unity-projects\Great Order\Assets\Resources\Sprites\UI\ExitShopButton.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       id="g1180"
+       transform="translate(1398.4878,636.10148)"
+       style="fill:url(#linearGradient2988);fill-opacity:1"
+       inkscape:export-filename="C:\Users\user\Desktop\unity-projects\Great Order\Assets\Resources\Sprites\UI\ExitShopButton.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <g
+         id="g1196"
+         style="fill:url(#linearGradient2988);fill-opacity:1">
+        <path
+           style="opacity:1;fill:url(#linearGradient3002);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:19.99999954, 4.99999988999999978;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+           d="m 3537.6525,-48.775189 c -1.4364,0 -3.9757,0.09451 -3.9733,1.651022 0.031,19.583281 -0.082,38.8967531 0,53.8990463 0.016,3.112818 5.7454,2.201177 7.9464,0 L 3551.7185,-3.31783 c 0.1811,-0.1415609 0.3562,-0.2940743 0.5232,-0.4609342 l 12.4224,-12.4224038 c 2.2012,-2.201176 2.2012,-5.745336 0,-7.946511 l -12.4224,-12.422404 c -0.1665,-0.166589 -0.3416,-0.319123 -0.5223,-0.460496 l -10.0938,-10.093588 c -1.1004,-1.100587 -2.5368,-1.651022 -3.9731,-1.651022 z"
+           id="rect1155"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssccccccccs" />
+        <rect
+           style="opacity:1;fill:url(#linearGradient2988);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:19.99999975, 4.99999994000000036;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+           id="rect1167"
+           width="15.089518"
+           height="30.179035"
+           x="-3488.5725"
+           y="5.6171875"
+           rx="0"
+           ry="0"
+           transform="scale(-1)" />
+        <rect
+           ry="0"
+           rx="0"
+           y="8.5110664"
+           x="-3508.0029"
+           height="24.391275"
+           width="15.089518"
+           id="rect1169"
+           style="opacity:1;fill:url(#linearGradient2988);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:19.99999976, 4.99999994000000036;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+           transform="scale(-1)" />
+        <rect
+           style="opacity:1;fill:url(#linearGradient2988);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:19.99999972, 4.99999993000000043;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+           id="rect1174"
+           width="15.089518"
+           height="20.25716"
+           x="-3527.4333"
+           y="10.578125"
+           rx="0"
+           ry="0"
+           transform="scale(-1)" />
+        <rect
+           transform="scale(-1)"
+           ry="1.0962228"
+           rx="0"
+           y="10.578125"
+           x="-3527.4333"
+           height="20.25716"
+           width="15.089518"
+           id="rect1241"
+           style="opacity:1;fill:url(#linearGradient2996);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:19.99999972, 4.99999993000000043;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill" />
+        <rect
+           transform="scale(-1)"
+           style="opacity:1;fill:url(#linearGradient3010);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:19.99999976, 4.99999994;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+           id="rect1251"
+           width="15.089518"
+           height="24.391275"
+           x="-3508.0029"
+           y="8.5110664"
+           rx="0"
+           ry="1.2423857" />
+        <rect
+           transform="scale(-1)"
+           y="5.6171875"
+           x="-3488.5725"
+           height="30.179035"
+           width="15.089518"
+           id="rect1261"
+           style="opacity:1;fill:url(#linearGradient3018);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:19.99999975, 4.99999994;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+           ry="0.87697816" />
+      </g>
+      <g
+         id="g1206"
+         style="fill:url(#linearGradient2988);fill-opacity:1" />
+    </g>
+    <rect
+       style="opacity:1;fill:#fa0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:19.99999975, 4.99999994;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect2055"
+       width="965.72913"
+       height="241.43228"
+       x="4153.626"
+       y="1214.6273"
+       rx="3.2155864"
+       ry="3.2155864"
+       inkscape:export-filename="C:\Users\user\Desktop\unity-projects\Great Order\Assets\Resources\Sprites\UI\ShopNotificationUI.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       ry="3.2155864"
+       rx="3.2155864"
+       y="1214.6273"
+       x="4153.626"
+       height="241.43228"
+       width="965.72913"
+       id="rect2072"
+       style="opacity:1;fill:url(#radialGradient2980);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:19.99999975, 4.99999994000000036;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       inkscape:export-filename="C:\Users\user\Desktop\unity-projects\Great Order\Assets\Resources\Sprites\UI\ShopNotificationUI.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect1149"
+       width="167.79517"
+       height="167.79517"
+       x="978.89935"
+       y="-309.21191"
+       ry="25.724691"
+       rx="25.724691"
+       inkscape:export-filename="C:\Users\user\Desktop\unity-projects\Great Order\Assets\Resources\Sprites\UI\IngredientShopIcons\CheddarCheeseIcon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
   </g>
 </svg>
