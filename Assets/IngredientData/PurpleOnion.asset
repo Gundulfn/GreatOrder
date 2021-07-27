@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06b8b40ea3c1b4144b97eb55b06e5643, type: 3}
   m_Name: PurpleOnion
   m_EditorClassIdentifier: 
-  ingredientImg: {fileID: 21300000, guid: 0bcd57a81fbc9d944820064346118b2d, type: 3}
+  ingredientImg: {fileID: 21300000, guid: ec36ee0c799d4144a858a1817413f139, type: 3}
   ingredientName: PurpleOnion
   price: 300

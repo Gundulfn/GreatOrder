@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06b8b40ea3c1b4144b97eb55b06e5643, type: 3}
   m_Name: ChickenPatty
   m_EditorClassIdentifier: 
-  ingredientImg: {fileID: 21300000, guid: 9db33d5c17db05e4a81d5f616f41b2e8, type: 3}
+  ingredientImg: {fileID: 21300000, guid: 9af1c36ea94d22e4289822127192d490, type: 3}
   ingredientName: ChickenPatty
   price: 350
