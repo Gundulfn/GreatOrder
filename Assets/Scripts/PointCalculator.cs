@@ -12,7 +12,11 @@ public class PointCalculator
     private const int GOOD_POINT = 10;
     private const int BAD_POINT = -5;
 
-    public static void CalculatePoint(float ingredientPos)
+    public const string NOICE_TYPE = "noice";
+    public const string GOOD_TYPE = "good";
+    public const string BAD_TYPE = "bad";
+
+    public static string CalculatePoint(float ingredientPos)
     {
         ingredientPos = Mathf.Abs(ingredientPos);
         
@@ -25,16 +29,22 @@ public class PointCalculator
             {
                 highestNoiceCount = noicePointCount;
             }
+
+            return NOICE_TYPE;
         }
         else if(ingredientPos >= BAD_LIMIT)
         {
             posPoint += BAD_POINT;
             noicePointCount = 0;
+
+            return BAD_TYPE;
         }
         else
         {
             posPoint += GOOD_POINT;
             noicePointCount = 0;
+
+            return GOOD_TYPE;
         }
     }
 

@@ -8,6 +8,9 @@ public class IngredientSpawn : MonoBehaviour
     [SerializeField]
     private OrderMovement orderMovement;
 
+    [SerializeField]
+    private GameObject badNotificationObj, goodNotificationObj, noiceNotificationObj;
+
     private Transform placedIngredient;
     private MovementController spawnedIngredient;
 
@@ -17,11 +20,28 @@ public class IngredientSpawn : MonoBehaviour
 
         if (spawnedIngredient)
         {
-            PointCalculator.CalculatePoint(spawnedIngredient.transform.position.x);
+            string pointType = PointCalculator.CalculatePoint(spawnedIngredient.transform.position.x);
             PointCalculator.IncreaseIngredientCount();
 
             placedIngredient = spawnedIngredient.transform;
             Destroy(spawnedIngredient);
+
+            badNotificationObj.SetActive(false);
+            goodNotificationObj.SetActive(false);
+            noiceNotificationObj.SetActive(false);
+
+            if(pointType == PointCalculator.NOICE_TYPE)
+            {
+                noiceNotificationObj.SetActive(true);
+            }
+            else if(pointType == PointCalculator.GOOD_TYPE)
+            {
+                goodNotificationObj.SetActive(true);
+            }
+            else
+            {
+                badNotificationObj.SetActive(true);
+            }
         }
 
         orderMovement.Move(ingredientPrefab.GetComponent<SpriteRenderer>().sprite.bounds.size.y);
