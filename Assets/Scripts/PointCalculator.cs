@@ -55,10 +55,15 @@ public class PointCalculator
     {
         placedIngredientCount++;
     }
-
+    
     public static int GetSpeedExtra()
     {
         return noicePointCount;
+    }
+
+    public static int GetIngredientCount()
+    {
+        return placedIngredientCount;
     }
 
     public static int GetHighestCombo()
