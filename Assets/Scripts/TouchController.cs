@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class TouchController : MonoBehaviour
 {
@@ -13,9 +14,16 @@ public class TouchController : MonoBehaviour
     {
         if(Input.touchCount > 0)
         {
-            Touch touch = Input.GetTouch(0);
-            
-            if(touch.phase == TouchPhase.Began)
+            Touch firstTouch = Input.GetTouch(0);
+
+            int id = firstTouch.fingerId;
+
+                if (EventSystem.current.IsPointerOverGameObject(id))
+                {
+                    return;
+                }
+
+            if(firstTouch.phase == TouchPhase.Began)
             {   
                 ingredientSpawn.SpawnIngredient();
             }
