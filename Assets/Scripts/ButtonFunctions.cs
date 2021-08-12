@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class ButtonFunctions : MonoBehaviour
 {
+    public static bool isButtonClicked;
+
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space) && SceneManager.GetActiveScene().name == "EntranceScene")

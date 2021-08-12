@@ -14,6 +14,11 @@ public class BackgroundMovement : MonoBehaviour
     {
         if (img)
         {
+            if(Time.timeScale == 0)
+            {
+                Time.timeScale = 1;
+            }
+            
             Vector2 offset = new Vector2(Time.time * .1f, 0);
             img.material.mainTextureOffset = offset;
         }
