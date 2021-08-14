@@ -9,10 +9,7 @@ public class GameModeHandler : MonoBehaviour
     [SerializeField]
     private GameObject gameControllerObj;
 
-    [SerializeField]
-    private GameOverInfoHandler gameOverInfoHandler;
-
-    //Race against time
+    //GameMode: Race against time
     private const float DEFAULT_TIME = 5;
     private float currentTime = DEFAULT_TIME;
 

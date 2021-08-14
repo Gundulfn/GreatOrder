@@ -50,7 +50,15 @@ public class PointCalculator
 
     public static int GetTotalPoint()
     {
-        int totalPoint = posPoint + GameVariables.GetIngredientVar() * placedIngredientCount;
+        int totalPoint;
+        if(posPoint < 0)
+        {
+            totalPoint = posPoint;
+        }
+        else
+        {
+            totalPoint = posPoint + GameVariables.GetIngredientVar() * placedIngredientCount;
+        }
 
         //Reset point variables
         posPoint = 0;

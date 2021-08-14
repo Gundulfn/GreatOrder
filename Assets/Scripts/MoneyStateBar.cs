@@ -5,9 +5,16 @@ public class MoneyStateBar : MonoBehaviour
 {
     private static TextMeshProUGUI moneyStateText;
 
-    void Start()
+    private static Color defaultMoneyStateTextColor;
+
+    void Awake()
     {
         moneyStateText = GetComponentInChildren<TextMeshProUGUI>();
+        defaultMoneyStateTextColor = moneyStateText.color;
+    }
+
+    void Start()
+    {
         UpdateMoneyState();
     }
 
@@ -16,6 +23,15 @@ public class MoneyStateBar : MonoBehaviour
     {
         if (moneyStateText)
         {
+            if(GameVariables.GetMoney() >= 0)
+            {
+                moneyStateText.color = defaultMoneyStateTextColor;
+            }
+            else
+            {
+                moneyStateText.color = Color.red;
+            }
+
             moneyStateText.SetText(GameVariables.GetMoney().ToString());
         }
     }

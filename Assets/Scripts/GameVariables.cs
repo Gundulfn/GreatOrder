@@ -51,6 +51,7 @@ public class GameVariables : MonoBehaviour
 
     public static int GetIngredientVar()
     {
+        Debug.Log(boughtIngredients.Count + " " + PlayerPrefs.GetString("boughtIngredients", DEFAULT_INGREDIENTS));
         return boughtIngredients.Count;
     }
 

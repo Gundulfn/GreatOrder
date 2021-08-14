@@ -3,7 +3,7 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     [SerializeField]
-    private GameOverInfoHandler gameOverInfoHandler;
+    private GameObject secondChanceUIObj;
 
     private const float TARGET_SIZE = 15;
     private const float MOVEMENT_START_THRESHOLD = -6;
@@ -20,7 +20,7 @@ public class CameraMovement : MonoBehaviour
         }
         else
         {
-            GameOver();
+            secondChanceUIObj.SetActive(true);
         }
     }
 
@@ -35,15 +35,9 @@ public class CameraMovement : MonoBehaviour
             }
             else
             {
-                GameOver();
+                secondChanceUIObj.SetActive(true);
                 isCameraMoving = false;
             }
         }
-    }
-
-    private void GameOver()
-    {
-        gameOverInfoHandler.gameObject.SetActive(true);
-        gameOverInfoHandler.SetGameOverInfo();
     }
 }
