@@ -3,13 +3,13 @@ using UnityEngine;
 public class PointCalculator
 {
     private static int posPoint, placedIngredientCount;
-    private static int noicePointCount, highestNoiceCount;
+    private static int badPointCount, noicePointCount, highestNoiceCount;
 
     private const float NOICE_LIMIT = .1f;
     private const float BAD_LIMIT = .5f;
 
-    private const int NOICE_POINT = 30;
-    private const int GOOD_POINT = 10;
+    private const int NOICE_POINT = 10;
+    private const int GOOD_POINT = 5;
     private const int BAD_POINT = -5;
 
     public const string NOICE_TYPE = "noice";
@@ -35,6 +35,8 @@ public class PointCalculator
         else if(ingredientPos >= BAD_LIMIT)
         {
             posPoint += BAD_POINT;
+            badPointCount++;
+            
             noicePointCount = 0;
 
             return BAD_TYPE;
@@ -57,7 +59,7 @@ public class PointCalculator
         }
         else
         {
-            totalPoint = posPoint + GameVariables.GetIngredientVar() * placedIngredientCount;
+            totalPoint = posPoint + GameVariables.GetIngredientVar() * (placedIngredientCount - badPointCount);
         }
 
         //Reset point variables

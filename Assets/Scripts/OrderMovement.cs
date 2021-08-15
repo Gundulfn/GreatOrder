@@ -33,7 +33,7 @@ public class OrderMovement : MonoBehaviour
 
         if (isFirstMove)
         {
-            GameModeHandler.StartGame();
+            GameModeHandler.instance.StartGame();
             isFirstMove = false;
         }
 

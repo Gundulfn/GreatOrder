@@ -3,6 +3,8 @@ using TMPro;
 
 public class GameModeHandler : MonoBehaviour
 {
+    public static GameModeHandler instance;
+
     [SerializeField]
     private TextMeshProUGUI topText;
 
@@ -11,10 +13,21 @@ public class GameModeHandler : MonoBehaviour
 
     //GameMode: Race against time
     private const float DEFAULT_TIME = 5;
-    private float currentTime = DEFAULT_TIME;
+    private const float EXTRA_TIME = 10;
+    private float currentTime;
 
-    private static bool hasGameStarted;
+    private bool hasGameStarted;
     
+    private IngredientSpawn ingredientSpawn;
+    
+    void Start()
+    {
+        instance = this;
+
+        ingredientSpawn = gameControllerObj.GetComponent<IngredientSpawn>();
+        currentTime = DEFAULT_TIME;
+    }
+
     void Update()
     {
         if (hasGameStarted)
@@ -28,10 +41,10 @@ public class GameModeHandler : MonoBehaviour
             {
                 topText.SetText("Time's up");
 
-                gameControllerObj.GetComponent<IngredientSpawn>().DestroyMovingIngredient();
+                ingredientSpawn.DestroyMovingIngredient();
                 gameControllerObj.SetActive(false);
-                
-                Reset();
+
+                hasGameStarted = false;
             }
         }
         else
@@ -40,14 +53,21 @@ public class GameModeHandler : MonoBehaviour
         }
     }
 
-    public static void StartGame()
+    // For extra time ad
+    public void AddExtraTime()
+	{
+        currentTime = EXTRA_TIME;
+        hasGameStarted = true;
+
+        gameControllerObj.SetActive(true);
+
+        ingredientSpawn.RemoveBread();
+		ingredientSpawn.SpawnIngredient(false);
+	}
+
+    public void StartGame()
     {
         hasGameStarted = true;
         Time.timeScale = 1;
-    }
-
-    public static void Reset()
-    {
-        hasGameStarted = false;
     }
 }

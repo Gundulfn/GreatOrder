@@ -14,7 +14,9 @@ public class IngredientSpawn : MonoBehaviour
     private Transform placedIngredient;
     private MovementController spawnedIngredient;
 
-    public void SpawnIngredient(int round = 1)
+    private GameObject breadObj;
+
+    public void SpawnIngredient(bool moveOrder = true)
     {
         GameObject ingredientPrefab = IngredientPrefabData.GetRandomIngredient();
 
@@ -44,7 +46,10 @@ public class IngredientSpawn : MonoBehaviour
             }
         }
 
-        orderMovement.Move(ingredientPrefab.GetComponent<SpriteRenderer>().sprite.bounds.size.y);
+        if(moveOrder)
+        {
+            orderMovement.Move(ingredientPrefab.GetComponent<SpriteRenderer>().sprite.bounds.size.y);
+        }
 
         GameObject obj = Instantiate(ingredientPrefab);
         
@@ -61,6 +66,16 @@ public class IngredientSpawn : MonoBehaviour
         {
             SpawnIngredient();
         }
+    }
+
+    public void DeactivateMovingIngredient()
+    {
+        spawnedIngredient.gameObject.SetActive(false);
+    }
+
+    public void ActivateMovingIngredient()
+    {
+        spawnedIngredient.gameObject.SetActive(true);
     }
 
     public void DestroyMovingIngredient()
@@ -83,10 +98,15 @@ public class IngredientSpawn : MonoBehaviour
             spawnPos = new Vector3(0, (breadObjectY + orderMovement.defaultThickness) / 2, orderMovement.transform.position.z);
         }
 
-        GameObject breadObj = Instantiate(breadObject, spawnPos, Quaternion.identity);
+        breadObj = Instantiate(breadObject, spawnPos, Quaternion.identity);
         breadObj.transform.parent = orderMovement.transform;
 
         orderMovement.StopMovement();
         Destroy(spawnedIngredient.gameObject);
+    }
+
+    public void RemoveBread()
+    {
+        Destroy(breadObj);
     }
 }

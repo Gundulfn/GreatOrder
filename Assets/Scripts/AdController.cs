@@ -4,8 +4,14 @@ using GoogleMobileAds.Api;
 
 public class AdController : MonoBehaviour 
 {
-	public BannerView bannerView;
-	public InterstitialAd interstitial;
+	private BannerView bannerView;
+	private RewardedInterstitialAd rewardedInterstitialAd;
+
+	public bool isRewardedAdPlayed
+	{
+		get;
+		private set;
+	}
 
 	void Start () 
 	{
@@ -15,16 +21,16 @@ public class AdController : MonoBehaviour
 		{
 			RequestBanner();
 		}
-		
-		RequestInterstitial();
+
+		RequestRewardedInterstitial();
 	}
 	
 	private void RequestBanner() 
 	{
         #if UNITY_ANDROID
-            string adUnitId = "ca-app-pub-3940256099942544/6300978111";// YOUR ANDROID BANNER AD ID HERE
+            string adUnitId = "ca-app-pub-3940256099942544/6300978111";
         #elif UNITY_IPHONE
-            string adUnitId = "ca-app-pub-3940256099942544/2934735716";// YOUR IOS BANNER AD ID HERE
+            string adUnitId = "ca-app-pub-3940256099942544/2934735716";
         #else
             string adUnitId = "unexpected_platform";
         #endif
@@ -36,21 +42,42 @@ public class AdController : MonoBehaviour
         this.bannerView.LoadAd(request);
     }
 
-	private void RequestInterstitial() 
+	private void RequestRewardedInterstitial() 
 	{
 		#if UNITY_ANDROID
-			string adUnitId = "ca-app-pub-3940256099942544/1033173712";// YOUR ANDROID INTERSTITIAL AD ID HERE
+			string adUnitId = "ca-app-pub-3940256099942544/5354046379";
 		#elif UNITY_IPHONE
-			string adUnitId = "ca-app-pub-3940256099942544/4411468910";// YOUR IOS INTERSTITIAL AD ID HERE
+			string adUnitId = "ca-app-pub-3940256099942544/6978759866";
 		#else
 			string adUnitId = "unexpected_platform";
 		#endif
 
-		this.interstitial = new InterstitialAd(adUnitId);
 		AdRequest request = new AdRequest.Builder().Build();
-		this.interstitial.LoadAd(request);
+        RewardedInterstitialAd.LoadAd(adUnitId, request, adLoadCallback);
 	}
 	
+	private void adLoadCallback(RewardedInterstitialAd ad, AdFailedToLoadEventArgs args)
+    {
+        if (args == null)
+        {
+            rewardedInterstitialAd = ad;
+        }
+    }
+
+	public void ShowRewardedInterstitialAd()
+	{
+		if (rewardedInterstitialAd != null)
+		{
+			rewardedInterstitialAd.Show(ExtraTimeRewardCallback);
+			isRewardedAdPlayed = true;
+		}
+	}
+
+	public void ExtraTimeRewardCallback(Reward reward)
+	{
+		GameModeHandler.instance.AddExtraTime();
+	}
+
 	public void ShowBanner()
     {
 		RequestBanner();
@@ -59,15 +86,5 @@ public class AdController : MonoBehaviour
 	public void HideBanner() 
     {
 		bannerView.Destroy();
-	}
-
-	public void ShowInterstitial() 
-    {
-		if(interstitial.IsLoaded()) 
-		{
-			interstitial.Show();
-		}
-
-		RequestInterstitial();
 	}
 }
