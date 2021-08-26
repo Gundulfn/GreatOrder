@@ -3,21 +3,34 @@ using TMPro;
 
 public class GameModeHandler : MonoBehaviour
 {
+    public static GameModeHandler instance;
+
     [SerializeField]
     private TextMeshProUGUI topText;
 
     [SerializeField]
-    private GameObject gameControllerObj;
+    private AdController adController;
 
     [SerializeField]
-    private GameOverInfoHandler gameOverInfoHandler;
+    private GameObject gameControllerObj, secondChanceUIObj, centerLineObj;
 
-    //Race against time
+    //GameMode: Race against time
     private const float DEFAULT_TIME = 5;
-    private float currentTime = DEFAULT_TIME;
+    private const float EXTRA_TIME = 10;
+    private float currentTime;
 
-    private static bool hasGameStarted;
+    private bool hasGameStarted;
+
+    private IngredientSpawn ingredientSpawn;
     
+    void Start()
+    {
+        instance = this;
+
+        ingredientSpawn = gameControllerObj.GetComponent<IngredientSpawn>();
+        currentTime = DEFAULT_TIME;
+    }
+
     void Update()
     {
         if (hasGameStarted)
@@ -31,10 +44,20 @@ public class GameModeHandler : MonoBehaviour
             {
                 topText.SetText("Time's up");
 
-                gameControllerObj.GetComponent<IngredientSpawn>().DestroyMovingIngredient();
+                if(!adController.isRewardedAdPlayed)
+                {
+                    ingredientSpawn.StopSpawning();
+                    secondChanceUIObj.SetActive(true);
+                }
+                else
+                {
+                    ingredientSpawn.EndSpawning();
+                }
+
                 gameControllerObj.SetActive(false);
-                
-                Reset();
+                centerLineObj.SetActive(false);
+
+                hasGameStarted = false;
             }
         }
         else
@@ -43,14 +66,26 @@ public class GameModeHandler : MonoBehaviour
         }
     }
 
-    public static void StartGame()
+    // For extra time ad
+    public void AddExtraTime()
+	{
+        currentTime = EXTRA_TIME;
+        hasGameStarted = true;
+
+        gameControllerObj.SetActive(true);
+        centerLineObj.SetActive(true);
+
+        ingredientSpawn.ContinueSpawning();
+	}
+
+    public void RejectExtraTime()
+    {
+        ingredientSpawn.EndSpawning();
+    }
+
+    public void StartGame()
     {
         hasGameStarted = true;
         Time.timeScale = 1;
-    }
-
-    public static void Reset()
-    {
-        hasGameStarted = false;
     }
 }

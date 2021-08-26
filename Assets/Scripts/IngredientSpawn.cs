@@ -14,8 +14,15 @@ public class IngredientSpawn : MonoBehaviour
     private Transform placedIngredient;
     private MovementController spawnedIngredient;
 
-    public void SpawnIngredient(int round = 1)
+    private GameObject breadObj;
+
+    public void SpawnIngredient(bool moveOrder = true)
     {
+        if(orderMovement.isMoving)
+        {
+            return;
+        }
+
         GameObject ingredientPrefab = IngredientPrefabData.GetRandomIngredient();
 
         if (spawnedIngredient)
@@ -44,26 +51,30 @@ public class IngredientSpawn : MonoBehaviour
             }
         }
 
-        orderMovement.Move(ingredientPrefab.GetComponent<SpriteRenderer>().sprite.bounds.size.y);
+        if(moveOrder)
+        {
+            orderMovement.Move(ingredientPrefab.GetComponent<SpriteRenderer>().sprite.bounds.size.y);
+        }
 
         GameObject obj = Instantiate(ingredientPrefab);
         
-        //BUG: Ingredients don't touch each other when fast-clicking 
         obj.transform.parent = orderMovement.transform;
         obj.transform.position = new Vector3(-1, 0, obj.transform.position.z + orderMovement.transform.position.z);
 
         spawnedIngredient = obj.GetComponent<MovementController>();
     }
 
-    void Update()
+    public void StopSpawning()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SpawnIngredient();
-        }
+        spawnedIngredient.Stop();
     }
 
-    public void DestroyMovingIngredient()
+    public void ContinueSpawning()
+    {
+        spawnedIngredient.Move();
+    }
+    
+    public void EndSpawning()
     {
         Vector3 spawnPos;
 
@@ -83,7 +94,7 @@ public class IngredientSpawn : MonoBehaviour
             spawnPos = new Vector3(0, (breadObjectY + orderMovement.defaultThickness) / 2, orderMovement.transform.position.z);
         }
 
-        GameObject breadObj = Instantiate(breadObject, spawnPos, Quaternion.identity);
+        breadObj = Instantiate(breadObject, spawnPos, Quaternion.identity);
         breadObj.transform.parent = orderMovement.transform;
 
         orderMovement.StopMovement();

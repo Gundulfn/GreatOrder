@@ -12,4 +12,10 @@ public class GameOverInfoHandler : MonoBehaviour
         sliceCountText.SetText("Total Slice Count: " + PointCalculator.GetIngredientCount().ToString());
         moneyEarnedText.SetText("Money Earned: " + PointCalculator.GetTotalPoint().ToString());
     }
+
+    public void GameOver()
+    {
+        this.gameObject.SetActive(true);
+        this.SetGameOverInfo();
+    }
 }

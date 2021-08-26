@@ -1,12 +1,13 @@
 using UnityEngine;
+using System.Collections;
 
 public class CameraMovement : MonoBehaviour
 {
     [SerializeField]
     private GameOverInfoHandler gameOverInfoHandler;
-
+    
     private const float TARGET_SIZE = 15;
-    private const float MOVEMENT_START_THRESHOLD = -6;
+    private const float MOVEMENT_START_THRESHOLD = -5;
 
     private bool isCameraMoving;
     private Vector3 targetPos;
@@ -20,7 +21,7 @@ public class CameraMovement : MonoBehaviour
         }
         else
         {
-            GameOver();
+            StartCoroutine(EndGameWithDelay());
         }
     }
 
@@ -35,15 +36,15 @@ public class CameraMovement : MonoBehaviour
             }
             else
             {
-                GameOver();
+                gameOverInfoHandler.GameOver();
                 isCameraMoving = false;
             }
         }
     }
 
-    private void GameOver()
+    private IEnumerator EndGameWithDelay()
     {
-        gameOverInfoHandler.gameObject.SetActive(true);
-        gameOverInfoHandler.SetGameOverInfo();
+        yield return new WaitForSeconds(2);
+        gameOverInfoHandler.GameOver();
     }
 }
