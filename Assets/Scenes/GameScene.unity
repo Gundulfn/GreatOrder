@@ -972,7 +972,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   topText: {fileID: 5270970126293471436}
+  adController: {fileID: 2128942811}
   gameControllerObj: {fileID: 1285796278}
+  secondChanceUIObj: {fileID: 1064293579}
+  centerLineObj: {fileID: 756727580}
 --- !u!4 &414159410
 Transform:
   m_ObjectHideFlags: 0
@@ -1159,9 +1162,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7cd651efea07f24784e4bf578bc95f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondChanceUIObj: {fileID: 1064293579}
-  gameOverUIObj: {fileID: 1235779969}
-  adController: {fileID: 2128942811}
   gameOverInfoHandler: {fileID: 1235779973}
 --- !u!20 &519420031
 Camera:
@@ -1173,7 +1173,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.9222962, g: 1, b: 0.6, a: 0.015686275}
+  m_BackGroundColor: {r: 0.8640132, g: 1, b: 0.6, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1433,7 +1433,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637142051}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5, z: 50}
+  m_LocalPosition: {x: 0, y: 5, z: 50}
   m_LocalScale: {x: 0.097141, y: 0.097141, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1586,7 +1586,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &704414787
 MonoBehaviour:
@@ -1635,7 +1635,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 113.85
+  m_fontSize: 112.55
   m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1720,7 +1720,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 250}
-  m_SizeDelta: {x: 200, y: 200}
+  m_SizeDelta: {x: 102.4, y: 73.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &756727582
 MonoBehaviour:
@@ -1927,21 +1927,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 5270970127458923375}
-        m_TargetAssemblyTypeName: ButtonFunctions, Assembly-CSharp
-        m_MethodName: OpenUI
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1235779969}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1235779973}
-        m_TargetAssemblyTypeName: GameOverInfoHandler, Assembly-CSharp
-        m_MethodName: GameOver
+      - m_Target: {fileID: 414159409}
+        m_TargetAssemblyTypeName: GameModeHandler, Assembly-CSharp
+        m_MethodName: RejectExtraTime
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2279,7 +2267,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045242907}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5, z: 50}
+  m_LocalPosition: {x: 0, y: 5, z: 50}
   m_LocalScale: {x: 0.114802994, y: 0.114802994, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2408,6 +2396,7 @@ GameObject:
   - component: {fileID: 1064293580}
   - component: {fileID: 1064293582}
   - component: {fileID: 1064293581}
+  - component: {fileID: 1064293583}
   m_Layer: 5
   m_Name: SecondChanceAdUI
   m_TagString: Untagged
@@ -2474,6 +2463,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064293579}
   m_CullTransparentMesh: 1
+--- !u!111 &1064293583
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064293579}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 5363f7a0e5edc44a795013a9151121bd, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 5363f7a0e5edc44a795013a9151121bd, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1091829606
 GameObject:
   m_ObjectHideFlags: 0
@@ -2795,6 +2800,7 @@ GameObject:
   - component: {fileID: 1235779972}
   - component: {fileID: 1235779971}
   - component: {fileID: 1235779973}
+  - component: {fileID: 1235779974}
   m_Layer: 5
   m_Name: GameOverUI
   m_TagString: Untagged
@@ -2875,6 +2881,22 @@ MonoBehaviour:
   highestComboText: {fileID: 327111063}
   sliceCountText: {fileID: 1909223534}
   moneyEarnedText: {fileID: 975660000}
+--- !u!111 &1235779974
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235779969}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 211b05caee11a4183aaadd0016b8172b, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 211b05caee11a4183aaadd0016b8172b, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1275291738
 GameObject:
   m_ObjectHideFlags: 0
@@ -3862,7 +3884,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983884729}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5, z: 50}
+  m_LocalPosition: {x: 0, y: 5, z: 50}
   m_LocalScale: {x: 0.088309996, y: 0.088309996, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

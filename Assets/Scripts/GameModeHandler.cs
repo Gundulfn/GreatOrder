@@ -9,7 +9,10 @@ public class GameModeHandler : MonoBehaviour
     private TextMeshProUGUI topText;
 
     [SerializeField]
-    private GameObject gameControllerObj;
+    private AdController adController;
+
+    [SerializeField]
+    private GameObject gameControllerObj, secondChanceUIObj, centerLineObj;
 
     //GameMode: Race against time
     private const float DEFAULT_TIME = 5;
@@ -17,7 +20,7 @@ public class GameModeHandler : MonoBehaviour
     private float currentTime;
 
     private bool hasGameStarted;
-    
+
     private IngredientSpawn ingredientSpawn;
     
     void Start()
@@ -41,8 +44,18 @@ public class GameModeHandler : MonoBehaviour
             {
                 topText.SetText("Time's up");
 
-                ingredientSpawn.DestroyMovingIngredient();
+                if(!adController.isRewardedAdPlayed)
+                {
+                    ingredientSpawn.StopSpawning();
+                    secondChanceUIObj.SetActive(true);
+                }
+                else
+                {
+                    ingredientSpawn.EndSpawning();
+                }
+
                 gameControllerObj.SetActive(false);
+                centerLineObj.SetActive(false);
 
                 hasGameStarted = false;
             }
@@ -60,10 +73,15 @@ public class GameModeHandler : MonoBehaviour
         hasGameStarted = true;
 
         gameControllerObj.SetActive(true);
+        centerLineObj.SetActive(true);
 
-        ingredientSpawn.RemoveBread();
-		ingredientSpawn.SpawnIngredient(false);
+        ingredientSpawn.ContinueSpawning();
 	}
+
+    public void RejectExtraTime()
+    {
+        ingredientSpawn.EndSpawning();
+    }
 
     public void StartGame()
     {

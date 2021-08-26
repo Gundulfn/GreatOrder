@@ -18,6 +18,11 @@ public class IngredientSpawn : MonoBehaviour
 
     public void SpawnIngredient(bool moveOrder = true)
     {
+        if(orderMovement.isMoving)
+        {
+            return;
+        }
+
         GameObject ingredientPrefab = IngredientPrefabData.GetRandomIngredient();
 
         if (spawnedIngredient)
@@ -53,32 +58,23 @@ public class IngredientSpawn : MonoBehaviour
 
         GameObject obj = Instantiate(ingredientPrefab);
         
-        //BUG: Ingredients don't touch each other when fast-clicking 
         obj.transform.parent = orderMovement.transform;
         obj.transform.position = new Vector3(-1, 0, obj.transform.position.z + orderMovement.transform.position.z);
 
         spawnedIngredient = obj.GetComponent<MovementController>();
     }
 
-    void Update()
+    public void StopSpawning()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SpawnIngredient();
-        }
+        spawnedIngredient.Stop();
     }
 
-    public void DeactivateMovingIngredient()
+    public void ContinueSpawning()
     {
-        spawnedIngredient.gameObject.SetActive(false);
+        spawnedIngredient.Move();
     }
-
-    public void ActivateMovingIngredient()
-    {
-        spawnedIngredient.gameObject.SetActive(true);
-    }
-
-    public void DestroyMovingIngredient()
+    
+    public void EndSpawning()
     {
         Vector3 spawnPos;
 
@@ -103,10 +99,5 @@ public class IngredientSpawn : MonoBehaviour
 
         orderMovement.StopMovement();
         Destroy(spawnedIngredient.gameObject);
-    }
-
-    public void RemoveBread()
-    {
-        Destroy(breadObj);
     }
 }

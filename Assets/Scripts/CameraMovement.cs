@@ -4,12 +4,6 @@ using System.Collections;
 public class CameraMovement : MonoBehaviour
 {
     [SerializeField]
-    private GameObject secondChanceUIObj, gameOverUIObj;
-
-    [SerializeField]
-    private AdController adController;
-
-    [SerializeField]
     private GameOverInfoHandler gameOverInfoHandler;
     
     private const float TARGET_SIZE = 15;
@@ -42,16 +36,7 @@ public class CameraMovement : MonoBehaviour
             }
             else
             {
-                if(!adController.isRewardedAdPlayed)
-                {
-                    secondChanceUIObj.SetActive(true);
-                }
-                else
-                {
-                    gameOverInfoHandler.SetGameOverInfo();
-                    gameOverUIObj.SetActive(true);
-                }
-
+                gameOverInfoHandler.GameOver();
                 isCameraMoving = false;
             }
         }
@@ -60,15 +45,6 @@ public class CameraMovement : MonoBehaviour
     private IEnumerator EndGameWithDelay()
     {
         yield return new WaitForSeconds(2);
-        
-        if(!adController.isRewardedAdPlayed)
-        {
-            secondChanceUIObj.SetActive(true);
-        }
-        else
-        {
-            gameOverInfoHandler.SetGameOverInfo();
-            gameOverUIObj.SetActive(true);
-        }
+        gameOverInfoHandler.GameOver();
     }
 }

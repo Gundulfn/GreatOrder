@@ -14,7 +14,12 @@ public class OrderMovement : MonoBehaviour
     private float ingredientThickness;
     private float targetY;
 
-    private bool isMoving;
+    public bool isMoving
+    {
+        get;
+        private set;
+    }
+
     private bool isFirstMove = true;
 
     void Start()

@@ -41,9 +41,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.16459321"
-     inkscape:cx="39737.363"
-     inkscape:cy="17570.592"
+     inkscape:zoom="0.072629325"
+     inkscape:cx="42235.007"
+     inkscape:cy="17224.448"
      inkscape:window-width="1440"
      inkscape:window-height="768"
      inkscape:window-x="0"
@@ -3033,5 +3033,10 @@
        transform="scale(0.26458333)"
        inkscape:transform-center-x="0.00013547384"
        inkscape:transform-center-y="37.485694" />
+    <path
+       id="rect1406"
+       style="fill:#dfdfdf;fill-opacity:1;stroke:none;stroke-width:3.77953;stroke-opacity:1"
+       d="M 43302.068 16315.725 C 43164.768 16315.725 43054.234 16426.258 43054.234 16563.559 L 43054.234 17196.91 C 43054.234 17334.21 43164.768 17444.744 43302.068 17444.744 L 44754.646 17444.744 L 44754.646 19331.035 C 44754.646 19468.335 44865.18 19578.869 45002.48 19578.869 L 45635.834 19578.869 C 45773.134 19578.869 45883.668 19468.335 45883.668 19331.035 L 45883.668 17444.744 L 47336.25 17444.744 C 47473.55 17444.744 47584.084 17334.21 47584.084 17196.91 L 47584.084 16563.559 C 47584.084 16426.258 47473.55 16315.725 47336.25 16315.725 L 45635.834 16315.725 L 45002.48 16315.725 L 43302.068 16315.725 z "
+       transform="scale(0.26458333)" />
   </g>
 </svg>
