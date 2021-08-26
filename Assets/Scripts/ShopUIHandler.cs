@@ -12,10 +12,13 @@ public class ShopUIHandler : MonoBehaviour
     [SerializeField]
     private Animation notificationAnim;
 
+    [SerializeField]
+    private AudioSource aud;
+
     void Start()
     {
         instance = this;
-        
+
         for (int i = 0; i < datas.Length; i++)
         {
             if (!GameVariables.IsIngredientBought(datas[i].ingredientName))
@@ -30,5 +33,11 @@ public class ShopUIHandler : MonoBehaviour
     public void PlayNotification()
     {
         notificationAnim.Play();
+        notificationAnim.GetComponent<AudioSource>().Play();
+    }
+
+    public void PlayBuySound()
+    {
+        aud.Play();
     }
 }
