@@ -7,6 +7,9 @@ public class AdController : MonoBehaviour
 	private BannerView bannerView;
 	private RewardedInterstitialAd rewardedInterstitialAd;
 
+	private const int TIME_BREAK_AD_LIMIT = 3;
+	private static int roundPlayed;
+
 	public bool isRewardedAdPlayed
 	{
 		get;
@@ -86,5 +89,18 @@ public class AdController : MonoBehaviour
 	public void HideBanner() 
     {
 		bannerView.Destroy();
+	}
+
+	public void NotifyRoundEnd()
+	{
+		if(roundPlayed + 1 >= TIME_BREAK_AD_LIMIT)
+		{
+			ShowRewardedInterstitialAd();
+			roundPlayed = 0;
+		}
+		else
+		{
+			roundPlayed++;
+		}
 	}
 }
