@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: NormalBun
   m_EditorClassIdentifier: 
   ingredientImg: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
-  ingredientName: NormalBun
+  ingredientName: Normal Bun
   price: 250000

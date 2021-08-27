@@ -870,6 +870,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b73203d6239273049b81bee6663ad9e1, type: 2}
   - {fileID: 11400000, guid: 92a22132f714d7940a5c6521c5d6759a, type: 2}
   - {fileID: 11400000, guid: e365ca1b11eb4db429ec006470bc974b, type: 2}
+  - {fileID: 11400000, guid: 2ddbb3b36abeb4e55a6b1486f84465d6, type: 2}
+  - {fileID: 11400000, guid: 80b3ff5d9e2664174937a4b0c5b231d4, type: 2}
+  - {fileID: 11400000, guid: 4f5e15006d9fc4754bd52977c601f834, type: 2}
+  - {fileID: 11400000, guid: c8ae9c7eb5d4342f0a280b26cfbaa374, type: 2}
   infoUIPrefab: {fileID: 8515475165541548075, guid: 6569314f5381a4f4594308f8b49a7d29, type: 3}
   notificationAnim: {fileID: 314836384}
 --- !u!1 &632782090

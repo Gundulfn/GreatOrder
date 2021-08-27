@@ -53,7 +53,7 @@ public class PointCalculator
     public static int GetTotalPoint()
     {
         int totalPoint;
-        if(posPoint < 0)
+        if(posPoint <= 0)
         {
             totalPoint = posPoint;
         }

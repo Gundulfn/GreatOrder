@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: CheddarCheese
   m_EditorClassIdentifier: 
   ingredientImg: {fileID: 21300000, guid: 7e4fb9f56cf237a469e8a50b1cb3e4e5, type: 3}
-  ingredientName: CheddarCheese
+  ingredientName: Cheddar Cheese
   price: 250
