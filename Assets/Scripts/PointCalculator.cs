@@ -8,7 +8,7 @@ public class PointCalculator
     private const float NOICE_LIMIT = .1f;
     private const float BAD_LIMIT = .5f;
 
-    private const int NOICE_POINT = 10;
+    private const int NOICE_POINT = 8;
     private const int GOOD_POINT = 5;
     private const int BAD_POINT = -5;
 
