@@ -15,11 +15,7 @@ public class GameModeHandler : MonoBehaviour
     private GameObject gameControllerObj, secondChanceUIObj, centerLineObj;
 
     //GameMode: Race against time
-<<<<<<< HEAD
-    private const float DEFAULT_TIME = 10;
-=======
     private const float DEFAULT_TIME = 45;
->>>>>>> b2ebecc4cfc74e3d5b39eaa901b4a833b18cf715
     private const float EXTRA_TIME = 10;
     private float currentTime;
 
