@@ -15,7 +15,7 @@ public class GameModeHandler : MonoBehaviour
     private GameObject gameControllerObj, secondChanceUIObj, centerLineObj;
 
     //GameMode: Race against time
-    private const float DEFAULT_TIME = 45;
+    private const float DEFAULT_TIME = 30;
     private const float EXTRA_TIME = 10;
     private float currentTime;
 
@@ -26,6 +26,8 @@ public class GameModeHandler : MonoBehaviour
     void Start()
     {
         instance = this;
+
+        topText.SetText("Press to start");
 
         ingredientSpawn = gameControllerObj.GetComponent<IngredientSpawn>();
         currentTime = DEFAULT_TIME;
@@ -53,6 +55,7 @@ public class GameModeHandler : MonoBehaviour
                 {
                     ingredientSpawn.EndSpawning();
                     adController.NotifyRoundEnd();
+                    Statistics.IncreaseRoundPlayed();
                 }
 
                 gameControllerObj.SetActive(false);
@@ -60,10 +63,6 @@ public class GameModeHandler : MonoBehaviour
 
                 hasGameStarted = false;
             }
-        }
-        else
-        {
-            topText.SetText("Press to start");
         }
     }
 
@@ -83,6 +82,7 @@ public class GameModeHandler : MonoBehaviour
     {
         ingredientSpawn.EndSpawning();
         adController.NotifyRoundEnd();
+        Statistics.IncreaseRoundPlayed();
     }
 
     public void StartGame()

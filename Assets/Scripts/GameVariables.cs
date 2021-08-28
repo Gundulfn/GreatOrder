@@ -3,6 +3,8 @@ using System.Collections.Generic;
 
 public class GameVariables : MonoBehaviour
 {
+    public static GameVariables instance;
+
     private static int money;
     private const int DEFAULT_MONEY_AMOUNT = 0;
 
@@ -14,6 +16,7 @@ public class GameVariables : MonoBehaviour
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
+        instance = this;
     }
 
     void Start()
@@ -102,6 +105,13 @@ public class GameVariables : MonoBehaviour
         {
             SaveBoughtIngredients();
             PlayerPrefs.SetInt("money", money);
+
+            Statistics.Save();
         }
+    }
+
+    public static void Destroy()
+    {
+        Destroy(instance.gameObject);
     }
 }
