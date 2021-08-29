@@ -59,12 +59,17 @@ public class PointCalculator
         }
         else
         {
-            totalPoint = posPoint + GameVariables.GetIngredientVar() * (placedIngredientCount - badPointCount);
+            float sliceCountPoint = (GameVariables.GetIngredientVar() / 10f) * (placedIngredientCount - badPointCount);
+            totalPoint = posPoint + (int)sliceCountPoint;
         }
-
+        
+        Statistics.SetHighestNoiceCombo(highestNoiceCount);
+        Statistics.SetHighestEarn(totalPoint);
+        
         //Reset point variables
         posPoint = 0;
         placedIngredientCount = 0;
+        badPointCount = 0;
         noicePointCount = 0;
 
         Money.IncreaseMoneyAmount(totalPoint);

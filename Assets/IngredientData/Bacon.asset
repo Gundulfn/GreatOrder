@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientImg: {fileID: 21300000, guid: ea6072ad428e447eaa52aab3225c04be, type: 3}
   ingredientName: Bacon
-  price: 800
+  price: 1350

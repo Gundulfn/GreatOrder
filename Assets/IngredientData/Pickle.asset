@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientImg: {fileID: 21300000, guid: 52afc06e1d3d1cc48af833146e4ebb58, type: 3}
   ingredientName: Pickle
-  price: 150
+  price: 200

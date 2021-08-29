@@ -67,14 +67,24 @@ public class AdController : MonoBehaviour
         }
     }
 
-	public void ShowRewardedInterstitialAd()
+	public void ShowRewardedInterstitialAd(bool isUserPlayingAd = true)
 	{
 		if (rewardedInterstitialAd != null)
 		{
-			rewardedInterstitialAd.Show(ExtraTimeRewardCallback);
+			if(isUserPlayingAd)
+			{
+				rewardedInterstitialAd.Show(ExtraTimeRewardCallback);
+			}
+			else
+			{
+				rewardedInterstitialAd.Show(NoRewardCallback);
+			}
+
 			isRewardedAdPlayed = true;
 		}
 	}
+
+	public void NoRewardCallback(Reward reward){ }
 
 	public void ExtraTimeRewardCallback(Reward reward)
 	{
@@ -95,7 +105,7 @@ public class AdController : MonoBehaviour
 	{
 		if(roundPlayed + 1 >= TIME_BREAK_AD_LIMIT)
 		{
-			ShowRewardedInterstitialAd();
+			ShowRewardedInterstitialAd(false);
 			roundPlayed = 0;
 		}
 		else

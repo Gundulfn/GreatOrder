@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientImg: {fileID: 21300000, guid: 9af1c36ea94d22e4289822127192d490, type: 3}
   ingredientName: Chicken Patty
-  price: 350
+  price: 1250

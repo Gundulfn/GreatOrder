@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientImg: {fileID: 21300000, guid: 6d49c7cafb71748039debdf9ebc207e3, type: 3}
   ingredientName: French Fries
-  price: 350
+  price: 400
