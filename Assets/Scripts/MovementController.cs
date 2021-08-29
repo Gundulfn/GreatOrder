@@ -8,6 +8,18 @@ public class MovementController : MonoBehaviour
 
     private bool canMove = true;
 
+    [SerializeField]
+    private bool editYPos;
+    private float defaultYPos;
+
+    void Start()
+    {
+        if(editYPos)
+        {
+            defaultYPos = transform.position.y;
+        }
+    }
+
     void Update()
     {
         if(canMove)
@@ -17,11 +29,11 @@ public class MovementController : MonoBehaviour
                 currentSpeed = moveSpeed + PointCalculator.GetSpeedExtra();
             }
 
-            transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+            transform.position = new Vector3(transform.position.x, defaultYPos, transform.position.z);
 
             if (Mathf.Abs(transform.position.x + currentSpeed * direction * Time.deltaTime) >= 1)
             {
-                transform.position = new Vector3(direction, 0, transform.position.z);
+                transform.position = new Vector3(direction, defaultYPos, transform.position.z);
                 direction *= -1;
             }
             else
