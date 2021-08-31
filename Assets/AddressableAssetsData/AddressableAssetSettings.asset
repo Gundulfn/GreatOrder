@@ -1,0 +1,326 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468a46d0ae32c3544b7d98094e6448a9, type: 3}
+  m_Name: AddressableAssetSettings
+  m_EditorClassIdentifier: 
+  m_DefaultGroup: c192c8104420b4499af5cb26d95495c9
+  m_CachedHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_OptimizeCatalogSize: 0
+  m_BuildRemoteCatalog: 0
+  m_BundleLocalCatalog: 0
+  m_CatalogRequestsTimeout: 0
+  m_DisableCatalogUpdateOnStart: 0
+  m_IgnoreUnsupportedFilesInBuild: 0
+  m_UniqueBundleIds: 0
+  m_NonRecursiveBuilding: 1
+  m_maxConcurrentWebRequests: 500
+  m_ContiguousBundles: 1
+  m_StripUnityVersionFromBundleBuild: 0
+  m_DisableVisibleSubAssetRepresentations: 0
+  m_ShaderBundleNaming: 0
+  m_ShaderBundleCustomNaming: 
+  m_MonoScriptBundleNaming: 0
+  m_MonoScriptBundleCustomNaming: 
+  m_RemoteCatalogBuildPath:
+    m_Id: 
+  m_RemoteCatalogLoadPath:
+    m_Id: 
+  m_ContentStateBuildPath: 
+  m_overridePlayerVersion: 
+  m_GroupAssets:
+  - {fileID: 11400000, guid: a6bba742c32ca4c8fa0f317bd96f3548, type: 2}
+  - {fileID: 11400000, guid: 46cab7a7aa09a4573a08cfe93770ed12, type: 2}
+  - {fileID: 11400000, guid: fd19f1a628e324dc69ec190299864187, type: 2}
+  - {fileID: 11400000, guid: 4e62b60af977743da8a93c22c332fc8a, type: 2}
+  - {fileID: 11400000, guid: 0f6c605a9c2f94080b745aeb6fdc2d51, type: 2}
+  - {fileID: 11400000, guid: 7d0c44f21bf734181a9197be9a3415f1, type: 2}
+  - {fileID: 11400000, guid: 626af72ea86bb4283a762b61050b3df0, type: 2}
+  - {fileID: 11400000, guid: 97f820d30d60d43c58258b56d13dd92b, type: 2}
+  - {fileID: 11400000, guid: e86558633cdbe42ddb50ce980a04e692, type: 2}
+  - {fileID: 11400000, guid: 5876b1aa8c2b04198993ac499cf31ee1, type: 2}
+  - {fileID: 11400000, guid: 5ec96c628fc9244fd98244e38a147a0c, type: 2}
+  - {fileID: 11400000, guid: 16e8c72262377410fb9da014b45d7580, type: 2}
+  - {fileID: 11400000, guid: a5b88b2136d2f489f8b1db4633ed590f, type: 2}
+  - {fileID: 11400000, guid: 1ca68c705300342059e6cb98d564a2dc, type: 2}
+  - {fileID: 11400000, guid: 038b381ac1a9e4d219abffeaf108cef3, type: 2}
+  - {fileID: 11400000, guid: 0ca3856f6577d400b81f89bdd17fc024, type: 2}
+  - {fileID: 11400000, guid: f6f53f372f98c4782b2e69f69891f246, type: 2}
+  - {fileID: 11400000, guid: 25a591d0b2efe4201b48fa12c77fa14b, type: 2}
+  - {fileID: 11400000, guid: 0185b7b4e32f84f97a3c3d8edd2486d0, type: 2}
+  - {fileID: 11400000, guid: 88c73dd1883354ed2b380b39b76f26ed, type: 2}
+  - {fileID: 11400000, guid: bfb27242765094f20903c79a507b4677, type: 2}
+  - {fileID: 11400000, guid: e69a40df62dee47a69ab42d726dbfc0a, type: 2}
+  - {fileID: 11400000, guid: f42b7a3ecd578456c83513591cb855e6, type: 2}
+  - {fileID: 11400000, guid: 4b756cde05976429a926caee1f8eb4b6, type: 2}
+  - {fileID: 11400000, guid: 32c35dc9f73ac4d6aae89e4684c82620, type: 2}
+  - {fileID: 11400000, guid: ae13b4cec717b4a5284612c85cbaf734, type: 2}
+  - {fileID: 11400000, guid: 8e5784e52570b49d9a1608463dd6b2fc, type: 2}
+  - {fileID: 11400000, guid: cc66c83d8f5704831be193c692872477, type: 2}
+  - {fileID: 11400000, guid: 6b103fa2480234593a2f3b96c78aaa37, type: 2}
+  - {fileID: 11400000, guid: 733c1c1c03c2c4e01ad73f9cb5722337, type: 2}
+  - {fileID: 11400000, guid: c75313d7e4e7049baa7da029563b6365, type: 2}
+  - {fileID: 11400000, guid: 427c0b10543f54fc0b80e832fcfce67b, type: 2}
+  - {fileID: 11400000, guid: b9771785832974ed98c1eea491baa186, type: 2}
+  - {fileID: 11400000, guid: ee08b7519911147319478773c009c37e, type: 2}
+  - {fileID: 11400000, guid: 87abb986f5a7147a3a960a07b1f06f97, type: 2}
+  - {fileID: 11400000, guid: c720e4f14ae4440ee8ff35cc0a0f8905, type: 2}
+  - {fileID: 11400000, guid: 043cf56d743d943f588fdbba20aac2f2, type: 2}
+  - {fileID: 11400000, guid: f74734421460e453fa4d0b4e95b1414d, type: 2}
+  - {fileID: 11400000, guid: 69bf8e064c8554d878e05e4f19996b2c, type: 2}
+  - {fileID: 11400000, guid: 6b6b3d458b46c4671bdfa9527fb662a7, type: 2}
+  - {fileID: 11400000, guid: e4b065246ae8e4322909694703bf1bca, type: 2}
+  - {fileID: 11400000, guid: 3895ea64ea9504f8eb7596c307d7947e, type: 2}
+  - {fileID: 11400000, guid: 99688aa2f8ecc4be2bdf3ea4c4e8594b, type: 2}
+  - {fileID: 11400000, guid: 359ee206fbe8c44abb9a231d96ffd4ee, type: 2}
+  - {fileID: 11400000, guid: 826b603ba67dc4234b575975a934fead, type: 2}
+  - {fileID: 11400000, guid: f592efdfe551e4184b81c2e5424c52fb, type: 2}
+  - {fileID: 11400000, guid: 7dfb16d3be9cc4ce2baff2557e73e8b3, type: 2}
+  - {fileID: 11400000, guid: c5dd043505fdc4bb8ab1c52fe96cf36f, type: 2}
+  - {fileID: 11400000, guid: c1e8773abffc44b0f8ea585b4d3ccd22, type: 2}
+  - {fileID: 11400000, guid: 26d11e0abdd624c56a372c20e722ece0, type: 2}
+  - {fileID: 11400000, guid: 1846844ce8527452f8afc205b392068c, type: 2}
+  - {fileID: 11400000, guid: 48381b9993b9a437d82bdf588c61b33a, type: 2}
+  - {fileID: 11400000, guid: ae71d0a1f721d456dbeab95d114e4007, type: 2}
+  - {fileID: 11400000, guid: 6da872d1a6594481596ba9d26b38b160, type: 2}
+  - {fileID: 11400000, guid: 46b7e46cedacd468cae4db627997410c, type: 2}
+  - {fileID: 11400000, guid: 6fe05899da35d4fab93a15b06fe8f63a, type: 2}
+  - {fileID: 11400000, guid: c40e55ce33eab4bee84723e2c68915db, type: 2}
+  - {fileID: 11400000, guid: 5642d95c94b54426cad2ca2481e18289, type: 2}
+  - {fileID: 11400000, guid: 899ecb24047b74450a1d68a154d21e5c, type: 2}
+  - {fileID: 11400000, guid: e58ff0f84daaf421f860de2f405ce146, type: 2}
+  - {fileID: 11400000, guid: 64edd5d9ea46f46559cf228b0bba83e3, type: 2}
+  - {fileID: 11400000, guid: e15a5d7bac69a450ca7ec409f8e93958, type: 2}
+  - {fileID: 11400000, guid: 1a2268b982a76479d8910b123a6c7e2f, type: 2}
+  - {fileID: 11400000, guid: 619a69700bbc5481ca1e233b2ba667f7, type: 2}
+  - {fileID: 11400000, guid: de604e81f2b37443a97b68a05aad3084, type: 2}
+  - {fileID: 11400000, guid: e0f480ada70914b589f0d972598acd6a, type: 2}
+  - {fileID: 11400000, guid: 2947ee66b603947a495f4eaf6f903a8d, type: 2}
+  - {fileID: 11400000, guid: 403a6df8f50ee449f80760dcb54ff4cb, type: 2}
+  - {fileID: 11400000, guid: b9e817d0e653343b0bbe10b58e306c3b, type: 2}
+  - {fileID: 11400000, guid: 597431392e01b4cc18cb07abae61b2ec, type: 2}
+  - {fileID: 11400000, guid: 8566fb36d43b6480e97e7819c0f50895, type: 2}
+  - {fileID: 11400000, guid: 43e884d28d3964a52922a3b3c261011a, type: 2}
+  - {fileID: 11400000, guid: a612dc4d14b39457fbb45ed7c3c05122, type: 2}
+  - {fileID: 11400000, guid: 4e3e83ddc28f348bbad7927003b22a70, type: 2}
+  - {fileID: 11400000, guid: 0e74e1becf8b24a7eaf3d024facb83ed, type: 2}
+  - {fileID: 11400000, guid: f8bdc5de2f7844f0fac0fc8e4d260459, type: 2}
+  - {fileID: 11400000, guid: a56b59de6940e48fcb8788f4837f1520, type: 2}
+  - {fileID: 11400000, guid: e1c69f117e6444c27b113fb1a970581f, type: 2}
+  - {fileID: 11400000, guid: 41c63e886e21b4a50a3a787c3941b9d2, type: 2}
+  - {fileID: 11400000, guid: fe835714e32c24679bbca4f6b27c9f24, type: 2}
+  - {fileID: 11400000, guid: bfba947dde193415db9c5fdeb93e7876, type: 2}
+  - {fileID: 11400000, guid: 252b867ce7cf848438b655c158a1142e, type: 2}
+  - {fileID: 11400000, guid: e48e50ad57c3f4f308ac4a0f7d0577c6, type: 2}
+  - {fileID: 11400000, guid: a32217a82366a479aab353703b4b1cb4, type: 2}
+  - {fileID: 11400000, guid: a52616826d5e24a4a82bac14d0824027, type: 2}
+  - {fileID: 11400000, guid: 4b42a7eaa849f43eca26eb6b68c4e449, type: 2}
+  - {fileID: 11400000, guid: 9ff93e329ae42404bb9465c9d87c9057, type: 2}
+  - {fileID: 11400000, guid: 6afef5fc4703049058c1cd4d54dd8e12, type: 2}
+  - {fileID: 11400000, guid: 3141f85ab3d89470baee6340655ad72d, type: 2}
+  - {fileID: 11400000, guid: 14c173f1da00c488faa4c0e1dc3ffbac, type: 2}
+  - {fileID: 11400000, guid: f4733d11a906d46fb9550dc926de9e08, type: 2}
+  - {fileID: 11400000, guid: 2f4e88b722afb454699563683d4ede5c, type: 2}
+  - {fileID: 11400000, guid: 076c20ff4d4d944269c5c042e26c6140, type: 2}
+  - {fileID: 11400000, guid: 10960805bccc6499fa16b5f2155d385e, type: 2}
+  - {fileID: 11400000, guid: 7e00be19756324901bf104d18096c887, type: 2}
+  - {fileID: 11400000, guid: 57ba5e5f0de5e4b998c3c6f789ea4acf, type: 2}
+  - {fileID: 11400000, guid: 4ea952f5e230a45b5bb174a4782ce39a, type: 2}
+  - {fileID: 11400000, guid: 989d03f67ca6143fea393c5e820aebfe, type: 2}
+  - {fileID: 11400000, guid: 34eda21c739a54982aca6a2c541ee99a, type: 2}
+  - {fileID: 11400000, guid: 3f12f8428b7d24153a0e75a5b4b89ad3, type: 2}
+  - {fileID: 11400000, guid: d85d44f58d06c45c5a4801804acfddfd, type: 2}
+  - {fileID: 11400000, guid: 3a935b7f0e23c4b5c9b7b9eed3a098d7, type: 2}
+  - {fileID: 11400000, guid: a6c496bcaeaab495a977a6c831526c24, type: 2}
+  - {fileID: 11400000, guid: 3676695fcbe93463e967be22d6edd065, type: 2}
+  - {fileID: 11400000, guid: 2d98ccde957434ea7ae64aefcdf26e65, type: 2}
+  - {fileID: 11400000, guid: cd744a2ab0cd74c1eae618d7c8de271c, type: 2}
+  - {fileID: 11400000, guid: 0bf8c8838a97d4c8db88c5fd946f0aaf, type: 2}
+  - {fileID: 11400000, guid: d3458b5b37a424d809b36a6e48d1f1c0, type: 2}
+  - {fileID: 11400000, guid: 0934a0c18f40f4b8ea2655e190df68cb, type: 2}
+  - {fileID: 11400000, guid: 6db3f4c4d8c7143cd910605873defba4, type: 2}
+  - {fileID: 11400000, guid: c2a763616cc6346f98ec5e3a209d5388, type: 2}
+  - {fileID: 11400000, guid: 046d92fc8f8cd4ef5acc3fc08d894182, type: 2}
+  - {fileID: 11400000, guid: 54aa0e5b59193437db3d395328db2e30, type: 2}
+  - {fileID: 11400000, guid: 4e398644b25d3450ba5c9f6ec4b61c49, type: 2}
+  m_BuildSettings:
+    m_CompileScriptsInVirtualMode: 0
+    m_CleanupStreamingAssetsAfterBuilds: 1
+    m_LogResourceManagerExceptions: 1
+    m_BundleBuildPath: Temp/com.unity.addressables/AssetBundles
+  m_ProfileSettings:
+    m_Profiles:
+    - m_InheritedParent: 
+      m_Id: 76a3c7eafa0f546ee88ea756bbe6ba05
+      m_ProfileName: Default
+      m_Values:
+      - m_Id: 5f23ee5fe4ffa4fc6bbb5ad138f3cc06
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 44afeb67c73a74b9baff58741ffd0d02
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: b243fcf527ab647099343dd7ed8632c9
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: 687e812dba7dd43a3ab3c8a7c2df153c
+        m_Value: ServerData/[BuildTarget]
+      - m_Id: 09e54278d93934e95a8f3e78bb60a138
+        m_Value: http://localhost/[BuildTarget]
+    m_ProfileEntryNames:
+    - m_Id: 5f23ee5fe4ffa4fc6bbb5ad138f3cc06
+      m_Name: BuildTarget
+      m_InlineUsage: 0
+    - m_Id: 44afeb67c73a74b9baff58741ffd0d02
+      m_Name: LocalBuildPath
+      m_InlineUsage: 0
+    - m_Id: b243fcf527ab647099343dd7ed8632c9
+      m_Name: LocalLoadPath
+      m_InlineUsage: 0
+    - m_Id: 687e812dba7dd43a3ab3c8a7c2df153c
+      m_Name: RemoteBuildPath
+      m_InlineUsage: 0
+    - m_Id: 09e54278d93934e95a8f3e78bb60a138
+      m_Name: RemoteLoadPath
+      m_InlineUsage: 0
+    m_ProfileVersion: 1
+  m_LabelTable:
+    m_LabelNames:
+    - default
+    - Locale
+    - Locale-af
+    - Locale-sq
+    - Locale-am
+    - Locale-ar
+    - Locale-hy
+    - Locale-as
+    - Locale-az
+    - Locale-bn
+    - Locale-eu
+    - Locale-be
+    - Locale-br
+    - Locale-bg
+    - Locale-my
+    - Locale-ca
+    - Locale-tzm
+    - Locale-chr
+    - Locale-zh-Hans
+    - Locale-hr
+    - Locale-cs
+    - Locale-da
+    - Locale-nl
+    - Locale-en
+    - Locale-et
+    - Locale-fo
+    - Locale-fil
+    - Locale-fi
+    - Locale-fr
+    - Locale-ff
+    - Locale-gl
+    - Locale-ka
+    - Locale-de
+    - Locale-el
+    - Locale-gu
+    - Locale-ha
+    - Locale-haw
+    - Locale-he
+    - Locale-hi
+    - Locale-hu
+    - Locale-is
+    - Locale-ig
+    - Locale-id
+    - Locale-ga
+    - Locale-it
+    - Locale-ja
+    - Locale-kl
+    - Locale-kn
+    - Locale-kk
+    - Locale-km
+    - Locale-rw
+    - Locale-kok
+    - Locale-ko
+    - Locale-ky
+    - Locale-lo
+    - Locale-lv
+    - Locale-lt
+    - Locale-lb
+    - Locale-mk
+    - Locale-ms
+    - Locale-ml
+    - Locale-mt
+    - Locale-mr
+    - Locale-mn
+    - Locale-ne
+    - Locale-se
+    - Locale-nso
+    - Locale-no
+    - Locale-or
+    - Locale-om
+    - Locale-ps
+    - Locale-fa
+    - Locale-pl
+    - Locale-pt
+    - Locale-pa
+    - Locale-ro
+    - Locale-rm
+    - Locale-ru
+    - Locale-sah
+    - Locale-gd
+    - Locale-ii
+    - Locale-si
+    - Locale-sk
+    - Locale-sl
+    - Locale-so
+    - Locale-st
+    - Locale-es
+    - Locale-sw
+    - Locale-sv
+    - Locale-gsw
+    - Locale-tg
+    - Locale-ta
+    - Locale-te
+    - Locale-th
+    - Locale-bo
+    - Locale-ti
+    - Locale-ts
+    - Locale-tn
+    - Locale-tr
+    - Locale-tk
+    - Locale-uk
+    - Locale-hsb
+    - Locale-ur
+    - Locale-ug
+    - Locale-uz
+    - Locale-vi
+    - Locale-cy
+    - Locale-fy
+    - Locale-xh
+    - Locale-yo
+    - Locale-zu
+    - Preload
+  m_SchemaTemplates: []
+  m_GroupTemplateObjects:
+  - {fileID: 11400000, guid: efa07dea0326147b5aade1ceaf7abc2d, type: 2}
+  m_InitializationObjects: []
+  m_CertificateHandlerType:
+    m_AssemblyName: 
+    m_ClassName: 
+  m_ActivePlayerDataBuilderIndex: 3
+  m_DataBuilders:
+  - {fileID: 11400000, guid: 98fe046e1b1b54f98bce7e009e2501b9, type: 2}
+  - {fileID: 11400000, guid: 595db4396cb9144438c811b317b45387, type: 2}
+  - {fileID: 11400000, guid: a765320fe59f74dae9e87242ede45011, type: 2}
+  - {fileID: 11400000, guid: b255ab7185b964dc0a814983455f875e, type: 2}
+  m_ActiveProfileId: 76a3c7eafa0f546ee88ea756bbe6ba05
+  m_HostingServicesManager:
+    m_HostingServiceInfos: []
+    m_Settings: {fileID: 11400000}
+    m_NextInstanceId: 0
+    m_RegisteredServiceTypeRefs: []

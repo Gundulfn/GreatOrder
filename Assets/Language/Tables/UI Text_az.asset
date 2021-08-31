@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI Text_az
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: az
+  m_SharedData: {fileID: 11400000, guid: 7087ea40bb63e465584bb810818835ad, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1651329982464
+    m_Localized: "B\u0259li"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1656421867520
+    m_Localized: "Daha \xE7ox xal \xFC\xE7\xFCn \u0259rzaqlari m\u0259rk\u0259z\u0259
+      yax\u0131n yerl\u0259\u015Fdirm\u0259y\u0259 \xE7al\u0131\u015F\u0131n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1660460982272
+    m_Localized: "\u018Frzaqi dayand\u0131rmaq \xFC\xE7\xFCn vurun"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1664596566016
+    m_Localized: "Ba\u015Flamaq"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1668795064320
+    m_Localized: "\xDCmumi Dilim Say\u0131: "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1672532189184
+    m_Localized: "Bu \u0259rzaqi ala bilm\u0259r\u0259m"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1680748830720
+    m_Localized: "Ma\u011Faza"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1684955717632
+    m_Localized: 'Oynanan Oyun: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1688436989952
+    m_Localized: "Menyuya Qay\u0131d\u0131n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1691163287552
+    m_Localized: Davam Et
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1694166409216
+    m_Localized: "Yenid\u0259n Ba\u015Flamaq"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1696905289728
+    m_Localized: "Yenid\u0259n Oynamaq"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1700491419648
+    m_Localized: Yox
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1703188357120
+    m_Localized: "Qazan\u0131lan Pul: "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1705285509120
+    m_Localized: 'Dil: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1707181334528
+    m_Localized: "\u018Fn Y\xFCks\u0259k \"Noice\" Kombo:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1709316235264
+    m_Localized: 'Qazanilan Pul: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1711014928384
+    m_Localized: '"Noice" Kombo: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1712747175936
+    m_Localized: "Sifari\u015F Haz\u0131r!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1714471034880
+    m_Localized: "Menyuya qay\u0131tmaq ist\u0259yirsiniz?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45757812957184
+    m_Localized: Statistika
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1
