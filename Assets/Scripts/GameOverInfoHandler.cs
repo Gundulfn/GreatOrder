@@ -15,9 +15,9 @@ public class GameOverInfoHandler : MonoBehaviour
     {
         int totalPoint = PointCalculator.GetTotalPoint();
 
-        highestComboText.SetText("Highest Combo: x" + PointCalculator.GetHighestCombo().ToString());
-        sliceCountText.SetText("Total Slice Count: " + PointCalculator.GetIngredientCount().ToString());
-        moneyEarnedText.SetText("Money Earned: " + totalPoint.ToString());
+        highestComboText.SetText(UITextData.noiceStreak + PointCalculator.GetHighestCombo().ToString());
+        sliceCountText.SetText(UITextData.totalSliceCount + PointCalculator.GetIngredientCount().ToString());
+        moneyEarnedText.SetText(UITextData.moneyEarned + totalPoint.ToString());
         
         if(totalPoint > 0)
         {

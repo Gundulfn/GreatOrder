@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI Text_tr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: tr
+  m_SharedData: {fileID: 11400000, guid: 7087ea40bb63e465584bb810818835ad, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1651329982464
+    m_Localized: Evet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1656421867520
+    m_Localized: "Daha fazla puan kazanmak i\xE7in malzemeyi olabildi\u011Fince ortaya
+      koy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1660460982272
+    m_Localized: "Malzemeyi durdurmak i\xE7in dokun"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1664596566016
+    m_Localized: "Ba\u015Fla"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1672532189184
+    m_Localized: "Bu malzemeyi alamazs\u0131n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1680748830720
+    m_Localized: "Ma\u011Faza"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1688436989952
+    m_Localized: "Men\xFCye D\xF6n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1691163287552
+    m_Localized: Devam
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1694166409216
+    m_Localized: "Tekrar Ba\u015Flat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1696905289728
+    m_Localized: Yeniden Oyna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1700491419648
+    m_Localized: "Hay\u0131r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1712747175936
+    m_Localized: "Sipari\u015F Haz\u0131r!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1714471034880
+    m_Localized: "Men\xFCye mi d\xF6nmek istiyorsun?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45757812957184
+    m_Localized: "\u0130statistikler"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297516162605056
+    m_Localized: "En \xC7ok \"Noice\" Kombosu: ;Oynanan Oyun: ;En \xC7ok Kazan\xE7;Kredi;\"Noice\"
+      Kombo: ;Toplam Dilim Say\u0131s\u0131: ; Kazan\u0131lan Para: ;Ba\u015Flamak
+      i\xE7in dokun;Zaman bitti"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

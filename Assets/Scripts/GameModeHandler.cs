@@ -22,12 +22,12 @@ public class GameModeHandler : MonoBehaviour
     private bool hasGameStarted;
 
     private IngredientSpawn ingredientSpawn;
-    
+
     void Start()
     {
         instance = this;
 
-        topText.SetText("Press to start");
+        topText.SetText(UITextData.pressToStart);
 
         ingredientSpawn = gameControllerObj.GetComponent<IngredientSpawn>();
         currentTime = DEFAULT_TIME;
@@ -40,11 +40,11 @@ public class GameModeHandler : MonoBehaviour
             if (currentTime > 1)
             {
                 currentTime -= Time.deltaTime;
-                topText.SetText((int)currentTime + " seconds left");
+                topText.SetText(((int)currentTime).ToString());
             }
             else
             {
-                topText.SetText("Time's up");
+                topText.SetText(UITextData.timeUp);
 
                 if(!adController.isRewardedAdPlayed)
                 {

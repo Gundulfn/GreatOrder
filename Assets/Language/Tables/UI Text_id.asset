@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI Text_id
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: id
+  m_SharedData: {fileID: 11400000, guid: 7087ea40bb63e465584bb810818835ad, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1651329982464
+    m_Localized: Ya
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1656421867520
+    m_Localized: Cobalah untuk menempatkan bahan-bahan di dekat pusat untuk mendapatkan
+      lebih banyak poin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1660460982272
+    m_Localized: Ketuk untuk menghentikan bahan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1664596566016
+    m_Localized: Mulai
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1672532189184
+    m_Localized: Tidak bisa membeli bahan ini
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1680748830720
+    m_Localized: Toko
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1688436989952
+    m_Localized: Kembali ke Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1691163287552
+    m_Localized: Melanjutkan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1694166409216
+    m_Localized: Mulai Ulang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1696905289728
+    m_Localized: 'Main Lagi
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1700491419648
+    m_Localized: Tidak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1712747175936
+    m_Localized: Pesanan Siap!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1714471034880
+    m_Localized: Apakah Anda ingin kembali ke menu?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45757812957184
+    m_Localized: Statistik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297516162605056
+    m_Localized: 'Streak "Noice" Tertinggi: ;Putaran Dimainkan: ;Uang Tertinggi yang
+      Diperoleh: ;Kredit;Streak "Noice": ;Jumlah Irisan Total: ;Uang yang Diperoleh:
+      ;Tekan untuk memulai;Waktu habis'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

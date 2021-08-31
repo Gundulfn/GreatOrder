@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-String-Tables-Pashto (ps)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-String-Tables-Pashto (ps)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 33778b2acc6644325b7c1311b5df6b9b
+  m_SerializeEntries: []
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 7764d0fcd54d54b3d87cde9d73bdc1f6, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 92967936a2b694a4386fa0335f1e441d, type: 2}
+    - {fileID: 11400000, guid: 2414268e6f2db45c49eefa467d65c762, type: 2}

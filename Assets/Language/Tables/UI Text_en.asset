@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI Text_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 7087ea40bb63e465584bb810818835ad, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1651329982464
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1656421867520
+    m_Localized: Try to place ingredients near to center for more points
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1660460982272
+    m_Localized: Tap to stop ingredient
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1664596566016
+    m_Localized: Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1672532189184
+    m_Localized: Can't buy this ingredient
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1680748830720
+    m_Localized: Shop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1688436989952
+    m_Localized: Return to Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1691163287552
+    m_Localized: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1694166409216
+    m_Localized: Restart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1696905289728
+    m_Localized: Play Again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1700491419648
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1712747175936
+    m_Localized: Order's Ready!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1714471034880
+    m_Localized: Do you want to return to menu?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45757812957184
+    m_Localized: Statistics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297516162605056
+    m_Localized: 'Highest "Noice" Streak: ;Round Played: ;Highest Earn: ;Credits;"Noice"
+      Streak: ;Total Slice Count: ;Money Earned: ;Tap to start;Time''s up'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

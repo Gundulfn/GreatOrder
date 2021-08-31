@@ -22,7 +22,7 @@ public class IngredientInfoUI : MonoBehaviour
         //Check if ingredient has bought, if it's bought set interactable off
         this.data = data; 
         img.sprite = data.ingredientImg;
-        text.SetText(data.ingredientName + " - " + data.price.ToString() + " Credits");
+        text.SetText(data.ingredientName + " - " + data.price.ToString() + " " + UITextData.credits);
     }
 
     public void BuyIngredient()
