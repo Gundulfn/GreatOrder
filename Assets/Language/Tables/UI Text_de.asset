@@ -39,20 +39,12 @@ MonoBehaviour:
     m_Localized: Start
     m_Metadata:
       m_Items: []
-  - m_Id: 1668795064320
-    m_Localized: 'Gesamtzahl der Zutaten: '
-    m_Metadata:
-      m_Items: []
   - m_Id: 1672532189184
     m_Localized: Kann diese Zutat nicht kaufen
     m_Metadata:
       m_Items: []
   - m_Id: 1680748830720
     m_Localized: Einkaufen
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1684955717632
-    m_Localized: 'Runde Gespielt: '
     m_Metadata:
       m_Items: []
   - m_Id: 1688436989952
@@ -71,26 +63,6 @@ MonoBehaviour:
     m_Localized: Nochmal abspielen
     m_Metadata:
       m_Items: []
-  - m_Id: 1703188357120
-    m_Localized: Geld verdient
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1705285509120
-    m_Localized: 'Sprache: '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1707181334528
-    m_Localized: "H\xF6chster \"Noice\" Streak: \n"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1709316235264
-    m_Localized: "H\xF6chst Geld Verdient: "
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1711014928384
-    m_Localized: '"Noice" Streak: '
-    m_Metadata:
-      m_Items: []
   - m_Id: 1712747175936
     m_Localized: Bestellung ist Bereit!
     m_Metadata:
@@ -101,6 +73,12 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 45757812957184
     m_Localized: Statistiken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297516162605056
+    m_Localized: "H\xF6chster \"Noice\" Streak: \n;Runde Gespielt: ;H\xF6chst Geld
+      Verdient: ;Gutschriften;\"Noice\" Streak: ;Gesamtzahl der Zutaten: ;Geld Verdient:
+      ;Dr\xFCcken Sie zum Starten;Zeit ist um"
     m_Metadata:
       m_Items: []
   references:

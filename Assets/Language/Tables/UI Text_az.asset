@@ -35,20 +35,12 @@ MonoBehaviour:
     m_Localized: "Ba\u015Flamaq"
     m_Metadata:
       m_Items: []
-  - m_Id: 1668795064320
-    m_Localized: "\xDCmumi Dilim Say\u0131: "
-    m_Metadata:
-      m_Items: []
   - m_Id: 1672532189184
     m_Localized: "Bu \u0259rzaqi ala bilm\u0259r\u0259m"
     m_Metadata:
       m_Items: []
   - m_Id: 1680748830720
     m_Localized: "Ma\u011Faza"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1684955717632
-    m_Localized: 'Oynanan Oyun: '
     m_Metadata:
       m_Items: []
   - m_Id: 1688436989952
@@ -71,26 +63,6 @@ MonoBehaviour:
     m_Localized: Yox
     m_Metadata:
       m_Items: []
-  - m_Id: 1703188357120
-    m_Localized: "Qazan\u0131lan Pul: "
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1705285509120
-    m_Localized: 'Dil: '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1707181334528
-    m_Localized: "\u018Fn Y\xFCks\u0259k \"Noice\" Kombo:"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1709316235264
-    m_Localized: 'Qazanilan Pul: '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1711014928384
-    m_Localized: '"Noice" Kombo: '
-    m_Metadata:
-      m_Items: []
   - m_Id: 1712747175936
     m_Localized: "Sifari\u015F Haz\u0131r!"
     m_Metadata:
@@ -101,6 +73,12 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 45757812957184
     m_Localized: Statistika
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297516162605056
+    m_Localized: "\u018Fn Y\xFCks\u0259k \"Noice\" Kombo: ;\xDCmumi Dilim Say\u0131:
+      ;\u018Fn \xC7ox Qazanc: ;Kredit;\"Noice\" Kombo: ;\xDCmumi Dilim Say\u0131:
+      ;Qazan\u0131lan Pul: ;Ba\u015Flamaq \xFC\xE7\xFCn vurun;Vaxt bitdi"
     m_Metadata:
       m_Items: []
   references:

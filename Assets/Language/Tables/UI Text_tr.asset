@@ -35,20 +35,12 @@ MonoBehaviour:
     m_Localized: "Ba\u015Fla"
     m_Metadata:
       m_Items: []
-  - m_Id: 1668795064320
-    m_Localized: "Toplam dilim say\u0131s\u0131: "
-    m_Metadata:
-      m_Items: []
   - m_Id: 1672532189184
     m_Localized: "Bu malzemeyi alamazs\u0131n"
     m_Metadata:
       m_Items: []
   - m_Id: 1680748830720
     m_Localized: "Ma\u011Faza"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1684955717632
-    m_Localized: 'Oynanan Oyun: '
     m_Metadata:
       m_Items: []
   - m_Id: 1688436989952
@@ -71,26 +63,6 @@ MonoBehaviour:
     m_Localized: "Hay\u0131r"
     m_Metadata:
       m_Items: []
-  - m_Id: 1703188357120
-    m_Localized: "Kazan\u0131lan Para: "
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1705285509120
-    m_Localized: 'Dil: '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1707181334528
-    m_Localized: "En Y\xFCksek \"Noice\" Kombosu: "
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1709316235264
-    m_Localized: "En \xC7ok Kazan\xE7: "
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1711014928384
-    m_Localized: '"Noice" Kombo: '
-    m_Metadata:
-      m_Items: []
   - m_Id: 1712747175936
     m_Localized: "Sipari\u015F Haz\u0131r!"
     m_Metadata:
@@ -101,6 +73,12 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 45757812957184
     m_Localized: "\u0130statistikler"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297516162605056
+    m_Localized: "En \xC7ok \"Noice\" Kombosu: ;Oynanan Oyun: ;En \xC7ok Kazan\xE7;Kredi;\"Noice\"
+      Kombo: ;Toplam Dilim Say\u0131s\u0131: ; Kazan\u0131lan Para: ;Ba\u015Flamak
+      i\xE7in dokun;Zaman bitti"
     m_Metadata:
       m_Items: []
   references:

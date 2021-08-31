@@ -34,20 +34,12 @@ MonoBehaviour:
     m_Localized: "Come\xE7ar"
     m_Metadata:
       m_Items: []
-  - m_Id: 1668795064320
-    m_Localized: 'Contagem Total de Fatias:'
-    m_Metadata:
-      m_Items: []
   - m_Id: 1672532189184
     m_Localized: "Voc\xEA n\xE3o pode comprar este ingrediente"
     m_Metadata:
       m_Items: []
   - m_Id: 1680748830720
     m_Localized: Loja
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1684955717632
-    m_Localized: 'Rodada Jogada: '
     m_Metadata:
       m_Items: []
   - m_Id: 1688436989952
@@ -70,26 +62,6 @@ MonoBehaviour:
     m_Localized: "N\xE3o"
     m_Metadata:
       m_Items: []
-  - m_Id: 1703188357120
-    m_Localized: 'Dinheiro Ganho: '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1705285509120
-    m_Localized: "L\xEDngua: "
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1707181334528
-    m_Localized: "Combina\xE7\xE3o \"Noice\" mais alta: "
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1709316235264
-    m_Localized: 'Maior Ganho: '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1711014928384
-    m_Localized: "Combina\xE7\xE3o \"Noice\": "
-    m_Metadata:
-      m_Items: []
   - m_Id: 1712747175936
     m_Localized: "O Pedido Est\xE1 Pronto!"
     m_Metadata:
@@ -100,6 +72,12 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 45757812957184
     m_Localized: Estatisticas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297516162605056
+    m_Localized: "Combina\xE7\xE3o \"Noice\" mais alta: ;Rodada Jogada: ;Maior Ganho:
+      ;Cr\xE9ditos;Combina\xE7\xE3o \"Noice\": ;Contagem Total de Fatias: ;Dinheiro
+      Ganho: ;Pressione para iniciar;O tempo acabou"
     m_Metadata:
       m_Items: []
   references:

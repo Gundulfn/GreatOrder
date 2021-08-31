@@ -31,20 +31,12 @@ MonoBehaviour:
     m_Key: StartButton
     m_Metadata:
       m_Items: []
-  - m_Id: 1668795064320
-    m_Key: SliceCountInfo
-    m_Metadata:
-      m_Items: []
   - m_Id: 1672532189184
     m_Key: ShopNotification
     m_Metadata:
       m_Items: []
   - m_Id: 1680748830720
     m_Key: Shop
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1684955717632
-    m_Key: RoundPlayedInfo
     m_Metadata:
       m_Items: []
   - m_Id: 1688436989952
@@ -67,26 +59,6 @@ MonoBehaviour:
     m_Key: NoButton
     m_Metadata:
       m_Items: []
-  - m_Id: 1703188357120
-    m_Key: MoneyEarnedInfo
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1705285509120
-    m_Key: LanguageButton
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1707181334528
-    m_Key: HighestComboInfo
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1709316235264
-    m_Key: HighestEarnInfo
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1711014928384
-    m_Key: ComboInfo
-    m_Metadata:
-      m_Items: []
   - m_Id: 1712747175936
     m_Key: GameOverUIHeader
     m_Metadata:
@@ -97,6 +69,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 45757812957184
     m_Key: Statistics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297516162605056
+    m_Key: Data
     m_Metadata:
       m_Items: []
   m_Metadata:

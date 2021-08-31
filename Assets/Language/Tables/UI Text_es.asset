@@ -35,20 +35,12 @@ MonoBehaviour:
     m_Localized: Comienzo
     m_Metadata:
       m_Items: []
-  - m_Id: 1668795064320
-    m_Localized: 'Recuento Total de Ingredientes: '
-    m_Metadata:
-      m_Items: []
   - m_Id: 1672532189184
     m_Localized: No puedes comprar este ingrediente
     m_Metadata:
       m_Items: []
   - m_Id: 1680748830720
     m_Localized: Tienda
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1684955717632
-    m_Localized: 'Ronda Jugada:'
     m_Metadata:
       m_Items: []
   - m_Id: 1688436989952
@@ -71,26 +63,6 @@ MonoBehaviour:
     m_Localized: No
     m_Metadata:
       m_Items: []
-  - m_Id: 1703188357120
-    m_Localized: 'Dinero Ganado: '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1705285509120
-    m_Localized: 'Idioma: '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1707181334528
-    m_Localized: "Racha \"Noice\" m\xE1s alta: "
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1709316235264
-    m_Localized: 'Mayor Cantidad de Dinero Ganado: '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1711014928384
-    m_Localized: '"Noice" Racha: '
-    m_Metadata:
-      m_Items: []
   - m_Id: 1712747175936
     m_Localized: "\xA1El Pedido est\xE1 Listo!"
     m_Metadata:
@@ -101,6 +73,12 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 45757812957184
     m_Localized: "Estad\xEDsticas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297516162605056
+    m_Localized: "Racha \"Noice\" m\xE1s alta: ;Ronda Jugada: ;Mayor Cantidad de
+      Dinero Ganado: ;Cr\xE9ditos;\"Noice\" Racha: ;Recuento Total de Ingredientes:
+      ;Dinero Ganado: ;Toque para comenzar;El tiempo ha terminado"
     m_Metadata:
       m_Items: []
   references:

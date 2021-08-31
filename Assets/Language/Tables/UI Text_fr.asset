@@ -35,20 +35,12 @@ MonoBehaviour:
     m_Localized: "D\xE9but"
     m_Metadata:
       m_Items: []
-  - m_Id: 1668795064320
-    m_Localized: 'Nombre Total de Tranches: '
-    m_Metadata:
-      m_Items: []
   - m_Id: 1672532189184
     m_Localized: "Vous ne pouvez pas acheter cet ingr\xE9dient"
     m_Metadata:
       m_Items: []
   - m_Id: 1680748830720
     m_Localized: Boutique
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1684955717632
-    m_Localized: "Tour Jou\xE9: "
     m_Metadata:
       m_Items: []
   - m_Id: 1688436989952
@@ -71,26 +63,6 @@ MonoBehaviour:
     m_Localized: Non
     m_Metadata:
       m_Items: []
-  - m_Id: 1703188357120
-    m_Localized: "L'argent Gagn\xE9: "
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1705285509120
-    m_Localized: 'Langue: '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1707181334528
-    m_Localized: "Combo le Plus \xC9lev\xE9 \"Noice\": "
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1709316235264
-    m_Localized: "Argent le Plus \xC9lev\xE9 Gagn\xE9: "
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1711014928384
-    m_Localized: '"Noice" Combo: '
-    m_Metadata:
-      m_Items: []
   - m_Id: 1712747175936
     m_Localized: "La Commande est Pr\xEAte !"
     m_Metadata:
@@ -101,6 +73,12 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 45757812957184
     m_Localized: Statistiques
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297516162605056
+    m_Localized: "Combo le Plus \xC9lev\xE9 \"Noice\": ;Tour Jou\xE9: ;Argent le
+      Plus \xC9lev\xE9 Gagn\xE9: ;Cr\xE9dits;\"Noice\" Combo: ;Nombre Total de Tranches:
+      ;L'argent Gagn\xE9: ;Appuyez pour d\xE9marrer;Le temps est \xE9coul\xE9"
     m_Metadata:
       m_Items: []
   references:

@@ -34,20 +34,12 @@ MonoBehaviour:
     m_Localized: Start
     m_Metadata:
       m_Items: []
-  - m_Id: 1668795064320
-    m_Localized: 'Total Slice Count: '
-    m_Metadata:
-      m_Items: []
   - m_Id: 1672532189184
     m_Localized: Can't buy this ingredient
     m_Metadata:
       m_Items: []
   - m_Id: 1680748830720
     m_Localized: Shop
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1684955717632
-    m_Localized: 'Round Played: '
     m_Metadata:
       m_Items: []
   - m_Id: 1688436989952
@@ -70,26 +62,6 @@ MonoBehaviour:
     m_Localized: No
     m_Metadata:
       m_Items: []
-  - m_Id: 1703188357120
-    m_Localized: 'Money Earned: '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1705285509120
-    m_Localized: 'Language: '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1707181334528
-    m_Localized: 'Highest "Noice" Streak: '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1709316235264
-    m_Localized: 'Highest Earn: '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1711014928384
-    m_Localized: '"Noice" Streak: '
-    m_Metadata:
-      m_Items: []
   - m_Id: 1712747175936
     m_Localized: Order's Ready!
     m_Metadata:
@@ -100,6 +72,11 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 45757812957184
     m_Localized: Statistics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297516162605056
+    m_Localized: 'Highest "Noice" Streak: ;Round Played: ;Highest Earn: ;Credits;"Noice"
+      Streak: ;Total Slice Count: ;Money Earned: ;Tap to start;Time''s up'
     m_Metadata:
       m_Items: []
   references:

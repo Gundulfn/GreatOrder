@@ -35,20 +35,12 @@ MonoBehaviour:
     m_Localized: Mulai
     m_Metadata:
       m_Items: []
-  - m_Id: 1668795064320
-    m_Localized: 'Jumlah Irisan Total: '
-    m_Metadata:
-      m_Items: []
   - m_Id: 1672532189184
     m_Localized: Tidak bisa membeli bahan ini
     m_Metadata:
       m_Items: []
   - m_Id: 1680748830720
     m_Localized: Toko
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1684955717632
-    m_Localized: 'Putaran Dimainkan: '
     m_Metadata:
       m_Items: []
   - m_Id: 1688436989952
@@ -73,26 +65,6 @@ MonoBehaviour:
     m_Localized: Tidak
     m_Metadata:
       m_Items: []
-  - m_Id: 1703188357120
-    m_Localized: 'Uang yang Diperoleh: '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1705285509120
-    m_Localized: 'Bahasa: '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1707181334528
-    m_Localized: 'Streak "Noice" Tertinggi: '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1709316235264
-    m_Localized: 'Uang Tertinggi yang Diperoleh: '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1711014928384
-    m_Localized: 'Streak "Noice": '
-    m_Metadata:
-      m_Items: []
   - m_Id: 1712747175936
     m_Localized: Pesanan Siap!
     m_Metadata:
@@ -103,6 +75,12 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 45757812957184
     m_Localized: Statistik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 297516162605056
+    m_Localized: 'Streak "Noice" Tertinggi: ;Putaran Dimainkan: ;Uang Tertinggi yang
+      Diperoleh: ;Kredit;Streak "Noice": ;Jumlah Irisan Total: ;Uang yang Diperoleh:
+      ;Tekan untuk memulai;Waktu habis'
     m_Metadata:
       m_Items: []
   references:

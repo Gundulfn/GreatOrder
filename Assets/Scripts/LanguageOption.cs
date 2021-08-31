@@ -1,16 +1,27 @@
 using UnityEngine;
+using TMPro;
 
 public class LanguageOption: MonoBehaviour
 {
-    private string langCode;
+    private string langText;
+    private int langId;
 
-    public void SetLangCode(string value)
+    private TextMeshProUGUI text;
+    private GameObject languageSettingUIObj;
+    
+    public void SetLangCode(string textValue, int id, GameObject obj)
     {
-        langCode = value;
+        langText = textValue;
+        langId = id;
+        languageSettingUIObj = obj;
+
+        text = GetComponentInChildren<TextMeshProUGUI>();        
+        text.SetText(langText);
     }
 
     public void OnLanguageOptionClick()
     {
-        LanguageSettings.instance.ChangeLanguage(langCode);
+        LanguageSettings.instance.ChangeLanguage(langId);
+        languageSettingUIObj.SetActive(false);
     }
 }
