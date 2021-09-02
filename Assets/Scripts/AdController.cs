@@ -4,6 +4,7 @@ using GoogleMobileAds.Api;
 
 public class AdController : MonoBehaviour 
 {
+	// Change adUnitIDs after uploading Play Store
 	private BannerView bannerView;
 	private RewardedInterstitialAd rewardedInterstitialAd;
 

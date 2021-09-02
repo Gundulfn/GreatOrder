@@ -27,7 +27,7 @@ public class LanguageSettings : MonoBehaviour
 
         EditButtonText();
 
-        LocalizationSettings.SelectedLocale = currentLocale;
+        LocalizationSettings.SelectedLocale = defaultLocale;
 
         for (int i = 0; i < LocalizationSettings.AvailableLocales.Locales.Count; ++i)
         {
@@ -52,8 +52,6 @@ public class LanguageSettings : MonoBehaviour
     {
         string systemLanguageCode = languageCodeDict[Application.systemLanguage];
         string currentLocaleCode = currentLocale.Identifier.Code;
-
-        Debug.Log(Application.systemLanguage + " " + systemLanguageCode);
 
         if(systemLanguageCode == currentLocaleCode)
         {
@@ -95,6 +93,7 @@ public class LanguageSettings : MonoBehaviour
         {"id", "Bahasa"},
         {"pt", "Língua"}
     };
+    
     private Dictionary<SystemLanguage, string> languageCodeDict = new Dictionary<SystemLanguage, string>()
     {
         {SystemLanguage.English, "en"},
