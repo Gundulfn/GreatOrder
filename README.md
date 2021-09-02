@@ -2,7 +2,7 @@
 
 Versioning System: a.b.c.d
 
-a => year
-b => big features, changes
-c => small features, changes
+a => year\n
+b => big features, changes\n
+c => small features, changes\n
 d => hotfix
