@@ -1,53 +1,60 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using GoogleMobileAds.Api;
+using TMPro;
 
-public class AdController : MonoBehaviour 
+public class AdController : MonoBehaviour
 {
-	// Change adUnitIDs after uploading Play Store
-	private BannerView bannerView;
-	private RewardedInterstitialAd rewardedInterstitialAd;
+    // Change adUnitIDs after uploading Play Store
+    private static BannerView bannerView;
+    private RewardedInterstitialAd rewardedInterstitialAd;
 
-	private const int TIME_BREAK_AD_LIMIT = 3;
-	private static int roundPlayed;
+    private const int TIME_BREAK_AD_LIMIT = 3;
+    private static int roundPlayed;
 
-	public bool isRewardedAdPlayed
-	{
-		get;
-		private set;
-	}
+	public TextMeshProUGUI text;
 
-	void Start () 
-	{
-		MobileAds.Initialize(initStatus => { });
-
-		if(SceneManager.GetActiveScene().name == "EntranceScene")
-		{
-			RequestBanner();
-		}
-
-		RequestRewardedInterstitial();
-	}
-	
-	private void RequestBanner() 
-	{
-        #if UNITY_ANDROID
-            string adUnitId = "ca-app-pub-3940256099942544/6300978111";
-        #elif UNITY_IPHONE
-            string adUnitId = "ca-app-pub-3940256099942544/2934735716";
-        #else
-            string adUnitId = "unexpected_platform";
-        #endif
-
-		AdSize adaptiveSize = AdSize.GetCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(AdSize.FullWidth);
-
-        this.bannerView = new BannerView(adUnitId, adaptiveSize, AdPosition.Bottom);
-        AdRequest request = new AdRequest.Builder().Build();
-        this.bannerView.LoadAd(request);
+    public bool isRewardedAdPlayed
+    {
+        get;
+        private set;
     }
 
-	private void RequestRewardedInterstitial() 
-	{
+    void Start()
+    {
+        MobileAds.Initialize(initStatus => { });
+		
+        if (SceneManager.GetActiveScene().name == "EntranceScene")
+        {
+            RequestBanner();
+        }
+		else
+		{
+			HideBanner();
+			bannerView.Destroy();
+        	RequestRewardedInterstitial();
+		}
+    }
+
+    private void RequestBanner()
+    {
+		#if UNITY_ANDROID
+			string adUnitId = "ca-app-pub-3940256099942544/6300978111";
+		#elif UNITY_IPHONE
+			string adUnitId = "ca-app-pub-3940256099942544/2934735716";
+		#else
+			string adUnitId = "unexpected_platform";
+		#endif
+
+        AdSize adaptiveSize = AdSize.GetCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(AdSize.FullWidth);
+
+        bannerView = new BannerView(adUnitId, adaptiveSize, AdPosition.Bottom);
+        AdRequest request = new AdRequest.Builder().Build();
+        bannerView.LoadAd(request);
+    }
+
+    private void RequestRewardedInterstitial()
+    {
 		#if UNITY_ANDROID
 			string adUnitId = "ca-app-pub-3940256099942544/5354046379";
 		#elif UNITY_IPHONE
@@ -56,11 +63,11 @@ public class AdController : MonoBehaviour
 			string adUnitId = "unexpected_platform";
 		#endif
 
-		AdRequest request = new AdRequest.Builder().Build();
+        AdRequest request = new AdRequest.Builder().Build();
         RewardedInterstitialAd.LoadAd(adUnitId, request, adLoadCallback);
-	}
-	
-	private void adLoadCallback(RewardedInterstitialAd ad, AdFailedToLoadEventArgs args)
+    }
+
+    private void adLoadCallback(RewardedInterstitialAd ad, AdFailedToLoadEventArgs args)
     {
         if (args == null)
         {
@@ -68,50 +75,50 @@ public class AdController : MonoBehaviour
         }
     }
 
-	public void ShowRewardedInterstitialAd(bool isUserPlayingAd = true)
-	{
-		if (rewardedInterstitialAd != null)
-		{
-			if(isUserPlayingAd)
-			{
-				rewardedInterstitialAd.Show(ExtraTimeRewardCallback);
-			}
-			else
-			{
-				rewardedInterstitialAd.Show(NoRewardCallback);
-			}
-
-			isRewardedAdPlayed = true;
-		}
-	}
-
-	public void NoRewardCallback(Reward reward){ }
-
-	public void ExtraTimeRewardCallback(Reward reward)
-	{
-		GameModeHandler.instance.AddExtraTime();
-	}
-
-	public void ShowBanner()
+    public void ShowRewardedInterstitialAd(bool isUserPlayingAd = true)
     {
-		RequestBanner();
-	}
+        if (rewardedInterstitialAd != null)
+        {
+            if (isUserPlayingAd)
+            {
+                rewardedInterstitialAd.Show(ExtraTimeRewardCallback);
+            }
+            else
+            {
+                rewardedInterstitialAd.Show(NoRewardCallback);
+            }
 
-	public void HideBanner() 
+            isRewardedAdPlayed = true;
+        }
+    }
+
+    public void NoRewardCallback(Reward reward) { }
+
+    public void ExtraTimeRewardCallback(Reward reward)
     {
-		bannerView.Destroy();
-	}
+        GameModeHandler.instance.AddExtraTime();
+    }
 
-	public void NotifyRoundEnd()
-	{
-		if(roundPlayed + 1 >= TIME_BREAK_AD_LIMIT)
-		{
-			ShowRewardedInterstitialAd(false);
-			roundPlayed = 0;
-		}
-		else
-		{
-			roundPlayed++;
-		}
-	}
+    public void ShowBanner()
+    {
+        bannerView.Show();
+    }
+
+    public void HideBanner()
+    {
+        bannerView.Hide();
+    }
+
+    public void NotifyRoundEnd()
+    {
+        if (roundPlayed + 1 >= TIME_BREAK_AD_LIMIT)
+        {
+            ShowRewardedInterstitialAd(false);
+            roundPlayed = 0;
+        }
+        else
+        {
+            roundPlayed++;
+        }
+    }
 }
