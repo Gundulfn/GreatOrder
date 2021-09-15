@@ -76,9 +76,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 297516162605056
-    m_Localized: "En \xC7ok \"Noice\" Kombosu: ;Oynanan Oyun: ;En \xC7ok Kazan\xE7;Kredi;\"Noice\"
-      Kombo: ;Toplam Dilim Say\u0131s\u0131: ; Kazan\u0131lan Para: ;Ba\u015Flamak
-      i\xE7in dokun;Zaman bitti"
+    m_Localized: "En Y\xFCksek \"Noice\" Kombosu: ;Oynanan Oyun: ;En \xC7ok Kazan\xE7:
+      ;Kredi;\"Noice\" Kombo: ;Toplam Dilim Say\u0131s\u0131: ; Kazan\u0131lan Para:
+      ;Ba\u015Flamak i\xE7in dokun;Zaman bitti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5711671917211648
+    m_Localized: "Ekstra s\xFCre ister misin?"
     m_Metadata:
       m_Items: []
   references:

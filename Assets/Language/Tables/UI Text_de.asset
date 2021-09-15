@@ -81,5 +81,9 @@ MonoBehaviour:
       ;Dr\xFCcken Sie zum Starten;Zeit ist um"
     m_Metadata:
       m_Items: []
+  - m_Id: 5711671917211648
+    m_Localized: Willst du mehr Zeit?
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

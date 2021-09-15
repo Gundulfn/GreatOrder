@@ -79,5 +79,9 @@ MonoBehaviour:
       Streak: ;Total Slice Count: ;Money Earned: ;Tap to start;Time''s up'
     m_Metadata:
       m_Items: []
+  - m_Id: 5711671917211648
+    m_Localized: Wanna extra time?
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

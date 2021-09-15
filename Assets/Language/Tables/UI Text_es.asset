@@ -81,5 +81,9 @@ MonoBehaviour:
       ;Dinero Ganado: ;Toque para comenzar;El tiempo ha terminado"
     m_Metadata:
       m_Items: []
+  - m_Id: 5711671917211648
+    m_Localized: "\xBFQuieres m\xE1s tiempo??"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
