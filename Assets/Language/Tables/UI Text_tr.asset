@@ -85,5 +85,29 @@ MonoBehaviour:
     m_Localized: "Ekstra s\xFCre ister misin?"
     m_Metadata:
       m_Items: []
+  - m_Id: 6371994236022784
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6371994303131648
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6371997281087488
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6372013781479424
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6372013781479425
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6372020127461376
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

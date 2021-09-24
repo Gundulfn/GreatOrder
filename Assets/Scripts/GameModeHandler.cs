@@ -15,7 +15,7 @@ public class GameModeHandler : MonoBehaviour
     private GameObject gameControllerObj, secondChanceUIObj, centerLineObj;
 
     //GameMode: Race against time
-    private const float DEFAULT_TIME = 30;
+    private const float DEFAULT_TIME = 2;
     private const float EXTRA_TIME = 10;
     private float currentTime;
 
@@ -46,17 +46,20 @@ public class GameModeHandler : MonoBehaviour
             {
                 topText.SetText(UITextData.timeUp);
 
-                if(!adController.isRewardedAdPlayed)
-                {
-                    ingredientSpawn.StopSpawning();
-                    secondChanceUIObj.SetActive(true);
-                }
-                else
-                {
-                    ingredientSpawn.EndSpawning();
-                    adController.NotifyRoundEnd();
-                    Statistics.IncreaseRoundPlayed();
-                }
+                ingredientSpawn.EndSpawning();
+                Statistics.IncreaseRoundPlayed();
+
+                // if(!adController.isRewardedAdPlayed)
+                // {
+                //     ingredientSpawn.StopSpawning();
+                //     secondChanceUIObj.SetActive(true);
+                // }
+                // else
+                // {
+                //     ingredientSpawn.EndSpawning();
+                //     adController.NotifyRoundEnd();
+                //     Statistics.IncreaseRoundPlayed();
+                // }
 
                 gameControllerObj.SetActive(false);
                 centerLineObj.SetActive(false);
@@ -81,7 +84,7 @@ public class GameModeHandler : MonoBehaviour
     public void RejectExtraTime()
     {
         ingredientSpawn.EndSpawning();
-        adController.NotifyRoundEnd();
+        //adController.NotifyRoundEnd();
         Statistics.IncreaseRoundPlayed();
     }
 

@@ -79,6 +79,30 @@ MonoBehaviour:
     m_Key: SecondChance
     m_Metadata:
       m_Items: []
+  - m_Id: 6371994236022784
+    m_Key: EntranceScene/Canvas/StatisticsUI/SecondChanceAdUI/Panel/YesButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6371994303131648
+    m_Key: EntranceScene/Canvas/StatisticsUI/SecondChanceAdUI/Panel/YesButton 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6371997281087488
+    m_Key: EntranceScene/Canvas/StatisticsUI/SecondChanceAdUI/Panel/YesButton 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6372013781479424
+    m_Key: EntranceScene/Canvas/StatisticsUI/SecondChanceAdUI/Panel/NoButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6372013781479425
+    m_Key: EntranceScene/Canvas/StatisticsUI/SecondChanceAdUI/Panel/NoButton 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6372020127461376
+    m_Key: EntranceScene/Canvas/StatisticsUI/SecondChanceAdUI/Panel/NoButton 2
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
