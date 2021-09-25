@@ -4,8 +4,10 @@ using UnityEngine.SceneManagement;
 
 public class AdController : MonoBehaviour
 {
-    // // Change adUnitIDs after uploading Play Store
-    // private static BannerView bannerView;
+    // NOTE: There is a problem with test ads on build
+
+    // Change adUnitIDs after uploading Play Store
+    // private BannerView bannerView;
     // private RewardedInterstitialAd rewardedInterstitialAd;
 
     // private const int TIME_BREAK_AD_LIMIT = 3;
@@ -19,29 +21,27 @@ public class AdController : MonoBehaviour
 
     // void Start()
     // {
-    //     MobileAds.Initialize(initStatus => { });
+    //     MobileAds.Initialize(initStatus => {});
 
-    //     if (SceneManager.GetActiveScene().name == "EntranceScene")
+    //     if(SceneManager.GetActiveScene().name == "EntranceScene")
     //     {
     //         RequestBanner();
     //     }
-	// 	else
-	// 	{
+    //     else
+    //     {
     //         RequestRewardedInterstitial();
-	// 		HideBanner();
-	// 		bannerView.Destroy();
-	// 	}
+    //     }
     // }
 
     // private void RequestBanner()
     // {
-	// 	#if UNITY_ANDROID
-	// 		string adUnitId = "ca-app-pub-3940256099942544/6300978111";
-	// 	#elif UNITY_IPHONE
-	// 		string adUnitId = "ca-app-pub-3940256099942544/2934735716";
-	// 	#else
-	// 		string adUnitId = "unexpected_platform";
-	// 	#endif
+    //     #if UNITY_ANDROID
+    //         string adUnitId = "ca-app-pub-3940256099942544/6300978111";
+    //     #elif UNITY_IPHONE
+    //         string adUnitId = "ca-app-pub-3940256099942544/2934735716";
+    //     #else
+    //         string adUnitId = "unexpected_platform";
+    //     #endif
 
     //     AdSize adaptiveSize = AdSize.GetCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(AdSize.FullWidth);
 
@@ -52,7 +52,13 @@ public class AdController : MonoBehaviour
 
     // private void RequestRewardedInterstitial()
     // {
-	// 	string adUnitId = "ca-app-pub-3940256099942544/5354046379";
+    //     #if UNITY_ANDROID
+    //         string adUnitId = "ca-app-pub-3940256099942544/6300978111";
+    //     #elif UNITY_IPHONE
+    //         string adUnitId = "ca-app-pub-3940256099942544/2934735716";
+    //     #else
+    //         string adUnitId = "unexpected_platform";
+    //     #endif
 
     //     AdRequest request = new AdRequest.Builder().Build();
     //     RewardedInterstitialAd.LoadAd(adUnitId, request, adLoadCallback);
@@ -60,12 +66,12 @@ public class AdController : MonoBehaviour
 
     // private void adLoadCallback(RewardedInterstitialAd ad, AdFailedToLoadEventArgs args)
     // {
-    //     if(args == null)
+    //     if (args == null)
     //     {
     //         rewardedInterstitialAd = ad;
-    //     }        
+    //     }
     // }
-    
+
     // public void ShowRewardedInterstitialAd(bool isUserPlayingAd = true)
     // {
     //     if (rewardedInterstitialAd != null)
