@@ -22,16 +22,22 @@ public class LanguageSettings : MonoBehaviour
     void Start()
     {
         instance = this;
+        text = GetComponentInChildren<TextMeshProUGUI>();
+        
+        string prefLocaleCode = PlayerPrefs.GetString("lang", "");
 
-        if (!currentLocale)
+        if(prefLocaleCode != "")
+        {
+            int index = LocalizationSettings.AvailableLocales.Locales.FindIndex(locale => locale.Identifier.Code == prefLocaleCode);
+            ChangeLanguage(index);
+        }
+        else if (!currentLocale)
         {
             currentLocale = defaultLocale;
+            EditButtonText();
         }
         
-        text = GetComponentInChildren<TextMeshProUGUI>();
-
-        EditButtonText();
-
+        
         LocalizationSettings.SelectedLocale = currentLocale;
 
         for (int i = 0; i < LocalizationSettings.AvailableLocales.Locales.Count; ++i)
@@ -47,8 +53,11 @@ public class LanguageSettings : MonoBehaviour
     {
         if (LocalizationSettings.AvailableLocales.Locales[index])
         {
+            
             LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
             currentLocale = LocalizationSettings.SelectedLocale;
+            
+            PlayerPrefs.SetString("lang", currentLocale.Identifier.Code);
             EditButtonText();
         }
     }
