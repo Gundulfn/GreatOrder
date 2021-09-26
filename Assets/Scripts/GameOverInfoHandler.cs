@@ -13,10 +13,10 @@ public class GameOverInfoHandler : MonoBehaviour
 
     public void SetGameOverInfo()
     {
-        int totalPoint = PointCalculator.GetTotalPoint();
-
         highestComboText.SetText(UITextData.noiceStreak + PointCalculator.GetHighestCombo().ToString());
         sliceCountText.SetText(UITextData.totalSliceCount + PointCalculator.GetIngredientCount().ToString());
+     
+        int totalPoint = PointCalculator.GetTotalPoint();
         moneyEarnedText.SetText(UITextData.moneyEarned + totalPoint.ToString());
         
         if(totalPoint > 0)

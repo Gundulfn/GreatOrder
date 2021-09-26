@@ -19,6 +19,7 @@ public class PointCalculator
     public static string CalculatePoint(float ingredientPos)
     {
         ingredientPos = Mathf.Abs(ingredientPos);
+        placedIngredientCount++;
         
         if(ingredientPos <= NOICE_LIMIT)
         {

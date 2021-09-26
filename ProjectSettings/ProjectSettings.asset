@@ -121,7 +121,6 @@ PlayerSettings:
   vulkanEnableSetSRGBWrite: 0
   vulkanEnablePreTransform: 0
   vulkanEnableLateAcquireNextImage: 0
-  vulkanEnableCommandBufferRecycling: 1
   m_SupportedAspectRatios:
     4:3: 1
     5:4: 1
@@ -240,8 +239,8 @@ PlayerSettings:
   AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: /Users/burakcanciftci/Desktop/unity-projects/gundulfKeystore.keystore
-  AndroidKeyaliasName: greatorder
+  AndroidKeystoreName: C:/Users/user/Desktop/Burak/unity-projects/Store/user.keystore
+  AndroidKeyaliasName: great order
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1

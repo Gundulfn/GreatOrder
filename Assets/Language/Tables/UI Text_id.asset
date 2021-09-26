@@ -83,5 +83,9 @@ MonoBehaviour:
       ;Tekan untuk memulai;Waktu habis'
     m_Metadata:
       m_Items: []
+  - m_Id: 5711671917211648
+    m_Localized: Ingin waktu ekstra?
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

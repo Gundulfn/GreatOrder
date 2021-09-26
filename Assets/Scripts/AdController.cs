@@ -1,117 +1,121 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using GoogleMobileAds.Api;
+//using GoogleMobileAds.Api;
 
-public class AdController : MonoBehaviour 
+public class AdController : MonoBehaviour
 {
-	// Change adUnitIDs after uploading Play Store
-	private BannerView bannerView;
-	private RewardedInterstitialAd rewardedInterstitialAd;
+    // NOTE: There is a problem with test ads on build
 
-	private const int TIME_BREAK_AD_LIMIT = 3;
-	private static int roundPlayed;
+    // Change adUnitIDs after uploading Play Store
+    // private BannerView bannerView;
+    // private RewardedInterstitialAd rewardedInterstitialAd;
 
-	public bool isRewardedAdPlayed
-	{
-		get;
-		private set;
-	}
+    // private const int TIME_BREAK_AD_LIMIT = 3;
+    // private static int roundPlayed;
 
-	void Start () 
-	{
-		MobileAds.Initialize(initStatus => { });
+    // public bool isRewardedAdPlayed
+    // {
+    //     get;
+    //     private set;
+    // }
 
-		if(SceneManager.GetActiveScene().name == "EntranceScene")
-		{
-			RequestBanner();
-		}
+    // void Start()
+    // {
+    //     MobileAds.Initialize(initStatus => {});
 
-		RequestRewardedInterstitial();
-	}
-	
-	private void RequestBanner() 
-	{
-        #if UNITY_ANDROID
-            string adUnitId = "ca-app-pub-3940256099942544/6300978111";
-        #elif UNITY_IPHONE
-            string adUnitId = "ca-app-pub-3940256099942544/2934735716";
-        #else
-            string adUnitId = "unexpected_platform";
-        #endif
+    //     if(SceneManager.GetActiveScene().name == "EntranceScene")
+    //     {
+    //         RequestBanner();
+    //     }
+    //     else
+    //     {
+    //         RequestRewardedInterstitial();
+    //     }
+    // }
 
-		AdSize adaptiveSize = AdSize.GetCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(AdSize.FullWidth);
+    // private void RequestBanner()
+    // {
+    //     #if UNITY_ANDROID
+    //         string adUnitId = "ca-app-pub-3940256099942544/6300978111";
+    //     #elif UNITY_IPHONE
+    //         string adUnitId = "ca-app-pub-3940256099942544/2934735716";
+    //     #else
+    //         string adUnitId = "unexpected_platform";
+    //     #endif
 
-        this.bannerView = new BannerView(adUnitId, adaptiveSize, AdPosition.Bottom);
-        AdRequest request = new AdRequest.Builder().Build();
-        this.bannerView.LoadAd(request);
-    }
+    //     AdSize adaptiveSize = AdSize.GetCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(AdSize.FullWidth);
 
-	private void RequestRewardedInterstitial() 
-	{
-		#if UNITY_ANDROID
-			string adUnitId = "ca-app-pub-3940256099942544/5354046379";
-		#elif UNITY_IPHONE
-			string adUnitId = "ca-app-pub-3940256099942544/6978759866";
-		#else
-			string adUnitId = "unexpected_platform";
-		#endif
+    //     bannerView = new BannerView(adUnitId, adaptiveSize, AdPosition.Bottom);
+    //     AdRequest request = new AdRequest.Builder().Build();
+    //     bannerView.LoadAd(request);
+    // }
 
-		AdRequest request = new AdRequest.Builder().Build();
-        RewardedInterstitialAd.LoadAd(adUnitId, request, adLoadCallback);
-	}
-	
-	private void adLoadCallback(RewardedInterstitialAd ad, AdFailedToLoadEventArgs args)
-    {
-        if (args == null)
-        {
-            rewardedInterstitialAd = ad;
-        }
-    }
+    // private void RequestRewardedInterstitial()
+    // {
+    //     #if UNITY_ANDROID
+    //         string adUnitId = "ca-app-pub-3940256099942544/6300978111";
+    //     #elif UNITY_IPHONE
+    //         string adUnitId = "ca-app-pub-3940256099942544/2934735716";
+    //     #else
+    //         string adUnitId = "unexpected_platform";
+    //     #endif
 
-	public void ShowRewardedInterstitialAd(bool isUserPlayingAd = true)
-	{
-		if (rewardedInterstitialAd != null)
-		{
-			if(isUserPlayingAd)
-			{
-				rewardedInterstitialAd.Show(ExtraTimeRewardCallback);
-			}
-			else
-			{
-				rewardedInterstitialAd.Show(NoRewardCallback);
-			}
+    //     AdRequest request = new AdRequest.Builder().Build();
+    //     RewardedInterstitialAd.LoadAd(adUnitId, request, adLoadCallback);
+    // }
 
-			isRewardedAdPlayed = true;
-		}
-	}
+    // private void adLoadCallback(RewardedInterstitialAd ad, AdFailedToLoadEventArgs args)
+    // {
+    //     if (args == null)
+    //     {
+    //         rewardedInterstitialAd = ad;
+    //     }
+    // }
 
-	public void NoRewardCallback(Reward reward){ }
+    // public void ShowRewardedInterstitialAd(bool isUserPlayingAd = true)
+    // {
+    //     if (rewardedInterstitialAd != null)
+    //     {
+    //         if (isUserPlayingAd)
+    //         {
+    //             rewardedInterstitialAd.Show(ExtraTimeRewardCallback);
+    //         }
+    //         else
+    //         {
+    //             rewardedInterstitialAd.Show(NoRewardCallback);
+    //         }
 
-	public void ExtraTimeRewardCallback(Reward reward)
-	{
-		GameModeHandler.instance.AddExtraTime();
-	}
+    //         isRewardedAdPlayed = true;
+    //     }
+    // }
 
-	public void ShowBanner()
-    {
-		RequestBanner();
-	}
+    // public void NoRewardCallback(Reward reward) { }
 
-	public void HideBanner() 
-    {
-		bannerView.Destroy();
-	}
+    // public void ExtraTimeRewardCallback(Reward reward)
+    // {
+    //     GameModeHandler.instance.AddExtraTime();
+    // }
 
-	public void NotifyRoundEnd()
-	{
-		if(roundPlayed + 1 >= TIME_BREAK_AD_LIMIT)
-		{
-			ShowRewardedInterstitialAd(false);
-			roundPlayed = 0;
-		}
-		else
-		{
-			roundPlayed++;
-		}
-	}
+    // public void ShowBanner()
+    // {
+    //     bannerView.Show();
+    // }
+
+    // public void HideBanner()
+    // {
+    //     bannerView.Hide();
+    // }
+
+    // public void NotifyRoundEnd()
+    // {
+    //     if (roundPlayed + 1 >= TIME_BREAK_AD_LIMIT)
+    //     {
+    //         ShowRewardedInterstitialAd(false);
+    //         roundPlayed = 0;
+    //     }
+    //     else
+    //     {
+    //         roundPlayed++;
+    //     }
+    // }
 }
