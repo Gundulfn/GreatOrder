@@ -1,4 +1,4 @@
-#GreatOrder
+# GreatOrder
 
 2D, vector graphics hyper-casual mobile game that players are making good and great burgers against time. Each "Good" or "Noice" burger ingredient placement, players earn money and they lose money if the placement is "Bad". Players can buy more ingredients for more flavoured burgers, so they can earn more money.
 
