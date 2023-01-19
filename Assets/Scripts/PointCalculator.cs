@@ -19,6 +19,7 @@ public class PointCalculator
     public static string CalculatePoint(float ingredientPos)
     {
         ingredientPos = Mathf.Abs(ingredientPos);
+        placedIngredientCount++;
         
         if(ingredientPos <= NOICE_LIMIT)
         {
@@ -61,7 +62,7 @@ public class PointCalculator
         {
             float sliceCountPoint = (GameVariables.GetIngredientVar() / 10f) * (placedIngredientCount - badPointCount);
             totalPoint = posPoint + (int)sliceCountPoint;
-        }
+        } 
         
         Statistics.SetHighestNoiceCombo(highestNoiceCount);
         Statistics.SetHighestEarn(totalPoint);
@@ -93,9 +94,6 @@ public class PointCalculator
 
     public static int GetHighestCombo()
     {
-        int value = highestNoiceCount;
-        highestNoiceCount = 0;
-
-        return value;
+        return highestNoiceCount;
     }
 }

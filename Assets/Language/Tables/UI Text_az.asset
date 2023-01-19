@@ -81,5 +81,9 @@ MonoBehaviour:
       ;Qazan\u0131lan Pul: ;Ba\u015Flamaq \xFC\xE7\xFCn vurun;Vaxt bitdi"
     m_Metadata:
       m_Items: []
+  - m_Id: 5711671917211648
+    m_Localized: "\u018Flav\u0259 vaxt ist\u0259yirsiniz?"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

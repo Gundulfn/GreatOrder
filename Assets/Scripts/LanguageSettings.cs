@@ -10,23 +10,34 @@ public class LanguageSettings : MonoBehaviour
 
     public static Locale currentLocale;
     public Locale defaultLocale;
-    
+
     [SerializeField]
     private LanguageOptionList languageOptionList;
-    
+
     [SerializeField]
     private GameObject languageSettingsUIObj;
-    
+
     private TextMeshProUGUI text;
 
     void Start()
     {
         instance = this;
-        currentLocale = defaultLocale;
         text = GetComponentInChildren<TextMeshProUGUI>();
+        
+        string prefLocaleCode = PlayerPrefs.GetString("lang", "");
 
-        EditButtonText();
-
+        if(prefLocaleCode != "")
+        {
+            int index = LocalizationSettings.AvailableLocales.Locales.FindIndex(locale => locale.Identifier.Code == prefLocaleCode);
+            ChangeLanguage(index);
+        }
+        else if (!currentLocale)
+        {
+            currentLocale = defaultLocale;
+            EditButtonText();
+        }
+        
+        
         LocalizationSettings.SelectedLocale = currentLocale;
 
         for (int i = 0; i < LocalizationSettings.AvailableLocales.Locales.Count; ++i)
@@ -40,10 +51,13 @@ public class LanguageSettings : MonoBehaviour
 
     public void ChangeLanguage(int index)
     {
-        if(LocalizationSettings.AvailableLocales.Locales[index])
+        if (LocalizationSettings.AvailableLocales.Locales[index])
         {
+            
             LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
             currentLocale = LocalizationSettings.SelectedLocale;
+            
+            PlayerPrefs.SetString("lang", currentLocale.Identifier.Code);
             EditButtonText();
         }
     }
@@ -53,19 +67,17 @@ public class LanguageSettings : MonoBehaviour
         string systemLanguageCode = languageCodeDict[Application.systemLanguage];
         string currentLocaleCode = currentLocale.Identifier.Code;
 
-        Debug.Log(Application.systemLanguage + " " + systemLanguageCode);
-
-        if(systemLanguageCode == currentLocaleCode)
+        if (systemLanguageCode == currentLocaleCode)
         {
             text.SetText(
-                languageTranslationDict[currentLocaleCode] + ": " 
+                languageTranslationDict[currentLocaleCode] + ": "
                 + languageNameDict[currentLocaleCode]);
         }
         else
         {
             text.SetText(
-                languageTranslationDict[currentLocaleCode] + "(" 
-                + languageTranslationDict[systemLanguageCode] + "): " 
+                languageTranslationDict[currentLocaleCode] + "("
+                + languageTranslationDict[systemLanguageCode] + "): "
                 + languageNameDict[currentLocaleCode]);
         }
     }
@@ -95,6 +107,7 @@ public class LanguageSettings : MonoBehaviour
         {"id", "Bahasa"},
         {"pt", "Língua"}
     };
+
     private Dictionary<SystemLanguage, string> languageCodeDict = new Dictionary<SystemLanguage, string>()
     {
         {SystemLanguage.English, "en"},

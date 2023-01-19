@@ -80,5 +80,9 @@ MonoBehaviour:
       Ganho: ;Pressione para iniciar;O tempo acabou"
     m_Metadata:
       m_Items: []
+  - m_Id: 5711671917211648
+    m_Localized: Quer um tempo extra?
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

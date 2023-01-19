@@ -5,7 +5,10 @@ public class Statistics: MonoBehaviour
     private static int highestNoiceCombo, roundPlayed, highestEarn;
     private static bool isInitialized;
 
-    void Awake()
+    [SerializeField]
+    private StatisticsUI statisticsUI;
+
+    void Start()
     {
         if(!isInitialized)
         {
@@ -15,6 +18,8 @@ public class Statistics: MonoBehaviour
 
             isInitialized = true;
         }
+
+        statisticsUI.SetStatistics();
     }
 
     public static void SetHighestNoiceCombo(int value)

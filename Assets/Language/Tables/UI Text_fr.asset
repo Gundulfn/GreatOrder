@@ -81,5 +81,9 @@ MonoBehaviour:
       ;L'argent Gagn\xE9: ;Appuyez pour d\xE9marrer;Le temps est \xE9coul\xE9"
     m_Metadata:
       m_Items: []
+  - m_Id: 5711671917211648
+    m_Localized: "Vous voulez du temps suppl\xE9mentaire?"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

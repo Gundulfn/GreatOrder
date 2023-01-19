@@ -28,7 +28,6 @@ public class IngredientSpawn : MonoBehaviour
         if (spawnedIngredient)
         {
             string pointType = PointCalculator.CalculatePoint(spawnedIngredient.transform.position.x);
-            PointCalculator.IncreaseIngredientCount();
 
             placedIngredient = spawnedIngredient.transform;
             Destroy(spawnedIngredient);

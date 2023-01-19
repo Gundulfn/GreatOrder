@@ -32,15 +32,6 @@ public class GameVariables : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            reset = !reset;
-            Debug.Log(reset);
-        }
-    }
-
     public static int GetMoney()
     {
         return money;
